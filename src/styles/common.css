@@ -11,9 +11,9 @@ body {
     font-weight: 400;
     letter-spacing: -0.01em;
 
-    color-scheme: light dark;
-    color: black;
-    background-color: white;
+
+    color: var(--color-text-main);
+    background-color: var(--color-bg-light);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
