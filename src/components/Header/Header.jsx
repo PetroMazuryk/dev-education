@@ -1,28 +1,28 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  IconWrapper,
-} from './Header.styled';
+import { NavLink } from 'react-router-dom';
+import css from './Header.module.css';
 import sprite from 'assets/sprite.svg';
 
 export const Header = () => {
+  const getLinkClass = ({ isActive }) =>
+    isActive ? `${css.link} ${css.linkActive}` : css.link;
+
   return (
-    <HeaderContainer>
-      <Navigation>
-        <StyledLink to="/first">
-          <IconWrapper>
+    <header className={css.header}>
+      <nav className={css.nav}>
+        <NavLink to="/" className={getLinkClass}>
+          <svg className={css.icon}>
             <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          First
-        </StyledLink>
-        <StyledLink to="/second">
-          <IconWrapper>
+          </svg>
+          Home
+        </NavLink>
+
+        <NavLink to="/tasks" className={getLinkClass}>
+          <svg className={css.icon}>
             <use href={`${sprite}#icon-logo`} />
-          </IconWrapper>
-          Second
-        </StyledLink>
-      </Navigation>
-    </HeaderContainer>
+          </svg>
+          TasksJS
+        </NavLink>
+      </nav>
+    </header>
   );
 };
