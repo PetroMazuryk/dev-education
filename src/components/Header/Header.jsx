@@ -1,26 +1,34 @@
 import { NavLink } from 'react-router-dom';
-import css from './Header.module.css';
+
 import sprite from 'assets/sprite.svg';
+import styles from './Header.module.css';
 
 export const Header = () => {
   const getLinkClass = ({ isActive }) =>
-    isActive ? `${css.link} ${css.linkActive}` : css.link;
+    isActive ? `${styles.link} ${styles.linkActive}` : styles.link;
 
   return (
-    <header className={css.header}>
-      <nav className={css.nav}>
+    <header className={styles.header}>
+      <nav className={styles.nav}>
         <NavLink to="/" className={getLinkClass}>
-          <svg className={css.icon}>
+          <svg className={styles.icon}>
             <use href={`${sprite}#icon-logo`} />
           </svg>
           Home
         </NavLink>
 
         <NavLink to="/tasks" className={getLinkClass}>
-          <svg className={css.icon}>
+          <svg className={styles.icon}>
             <use href={`${sprite}#icon-logo`} />
           </svg>
           TasksJS
+        </NavLink>
+
+        <NavLink to="/english" className={getLinkClass}>
+          <svg className={styles.icon}>
+            <use href={`${sprite}#icon-logo`} />
+          </svg>
+          English
         </NavLink>
       </nav>
     </header>
