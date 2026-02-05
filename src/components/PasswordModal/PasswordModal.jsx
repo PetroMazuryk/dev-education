@@ -33,7 +33,9 @@ const PasswordModal = ({ onSuccess }) => {
           autoFocus
         />
 
-        {error && <p className={styles.error}>{error}</p>}
+        <div className={styles.errorWrapper}>
+          {error && <p className={styles.error}>{error}</p>}
+        </div>
 
         <button className={styles.button} onClick={handleSubmit}>
           Підтвердити
