@@ -29,8 +29,7 @@ const PasswordModal = ({ onSuccess }) => {
           placeholder="••••••••"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className={styles.input}
-          autoFocus
+          className={`${styles.input} ${error ? styles.inputError : ''}`}
         />
 
         <div className={styles.errorWrapper}>
