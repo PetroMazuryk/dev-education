@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react-swc": "^3.3.2",
+    "env": "^0.0.2",
     "modern-normalize": "^2.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
