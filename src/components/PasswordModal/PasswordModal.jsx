@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 import sprite from '../../assets/sprite.svg';
 import styles from './PasswordModal.module.css';
 
 const modalRoot = document.getElementById('modal-root');
+const ACCESS_KEY = 'siteAccess';
 
 const PasswordModal = ({ onSuccess }) => {
   const [password, setPassword] = useState('');
@@ -13,15 +14,23 @@ const PasswordModal = ({ onSuccess }) => {
 
   const SITE_PASSWORD = import.meta.env.VITE_API_PASSWORD;
 
+  useEffect(() => {
+    const hasAccess = localStorage.getItem(ACCESS_KEY);
+    if (hasAccess === 'true') {
+      onSuccess();
+    }
+  }, [onSuccess]);
+
   const handleSubmit = () => {
     if (password === SITE_PASSWORD) {
+      localStorage.setItem(ACCESS_KEY, 'true');
+
       onSuccess();
     } else {
       setError('Невірний пароль');
       setPassword('');
     }
   };
-
   return createPortal(
     <div className={styles.backdrop}>
       <div className={styles.modal}>
