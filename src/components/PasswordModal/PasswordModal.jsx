@@ -5,14 +5,14 @@ import sprite from '../../assets/sprite.svg';
 import styles from './PasswordModal.module.css';
 
 const modalRoot = document.getElementById('modal-root');
+const SITE_PASSWORD = import.meta.env.VITE_API_PASSWORD;
+const ACCESS_DURATION = 24 * 60 * 60 * 1000;
 const ACCESS_KEY = 'siteAccess';
 
 const PasswordModal = ({ onSuccess }) => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
-  const SITE_PASSWORD = import.meta.env.VITE_API_PASSWORD;
 
   useEffect(() => {
     const saved = localStorage.getItem(ACCESS_KEY);
@@ -30,7 +30,7 @@ const PasswordModal = ({ onSuccess }) => {
 
   const handleSubmit = () => {
     if (password === SITE_PASSWORD) {
-      const expiresAt = Date.now() + 24 * 60 * 60 * 1000;
+      const expiresAt = Date.now() + ACCESS_DURATION;
       localStorage.setItem(ACCESS_KEY, expiresAt);
 
       onSuccess();
