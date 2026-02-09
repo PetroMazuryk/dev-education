@@ -15,15 +15,23 @@ const PasswordModal = ({ onSuccess }) => {
   const SITE_PASSWORD = import.meta.env.VITE_API_PASSWORD;
 
   useEffect(() => {
-    const hasAccess = localStorage.getItem(ACCESS_KEY);
-    if (hasAccess === 'true') {
-      onSuccess();
+    const saved = localStorage.getItem(ACCESS_KEY);
+
+    if (saved) {
+      const expiresAt = Number(saved);
+
+      if (Date.now() < expiresAt) {
+        onSuccess();
+      } else {
+        localStorage.removeItem(ACCESS_KEY);
+      }
     }
-  }, [onSuccess]);
+  }, []);
 
   const handleSubmit = () => {
     if (password === SITE_PASSWORD) {
-      localStorage.setItem(ACCESS_KEY, 'true');
+      const expiresAt = Date.now() + 24 * 60 * 60 * 1000;
+      localStorage.setItem(ACCESS_KEY, expiresAt);
 
       onSuccess();
     } else {
@@ -31,6 +39,7 @@ const PasswordModal = ({ onSuccess }) => {
       setPassword('');
     }
   };
+
   return createPortal(
     <div className={styles.backdrop}>
       <div className={styles.modal}>
