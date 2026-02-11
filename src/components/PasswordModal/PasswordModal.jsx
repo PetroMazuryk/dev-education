@@ -21,6 +21,9 @@ const PasswordModal = ({ onSuccess }) => {
       const expiresAt = Number(saved);
 
       if (Date.now() < expiresAt) {
+        const newExpiresAt = Date.now() + ACCESS_DURATION;
+        localStorage.setItem(ACCESS_KEY, newExpiresAt);
+
         onSuccess();
       } else {
         localStorage.removeItem(ACCESS_KEY);
