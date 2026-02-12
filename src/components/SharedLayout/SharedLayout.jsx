@@ -3,6 +3,8 @@ import { Outlet } from 'react-router-dom';
 import { Header } from 'components/Header/Header';
 import PasswordModal from 'components/PasswordModal/PasswordModal';
 
+import styles from './SharedLayout.module.css';
+
 const SharedLayout = () => {
   const [isAuthorized, setIsAuthorized] = useState(false);
 
@@ -11,13 +13,13 @@ const SharedLayout = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <Header />
       {!isAuthorized && <PasswordModal onSuccess={handleSuccessAuth} />}
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-    </>
+    </div>
   );
 };
 
