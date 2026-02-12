@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
+import logo from 'assets/logo.png';
 import sprite from 'assets/sprite.svg';
 import styles from './Header.module.css';
 
@@ -9,28 +10,33 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
-        <NavLink to="/" className={getLinkClass}>
-          <svg className={styles.icon}>
-            <use href={`${sprite}#icon-logo`} />
-          </svg>
-          Home
+      <div className={styles.container}>
+        <NavLink to="/" className={styles.logo}>
+          <img src={logo} alt="Logo" />
         </NavLink>
+        <nav className={styles.nav}>
+          <NavLink to="/" className={getLinkClass}>
+            <svg className={styles.icon}>
+              <use href={`${sprite}#icon-logo`} />
+            </svg>
+            Home
+          </NavLink>
 
-        <NavLink to="/tasks" className={getLinkClass}>
-          <svg className={styles.icon}>
-            <use href={`${sprite}#icon-logo`} />
-          </svg>
-          TasksJS
-        </NavLink>
+          <NavLink to="/tasks" className={getLinkClass}>
+            <svg className={styles.icon}>
+              <use href={`${sprite}#icon-logo`} />
+            </svg>
+            TasksJS
+          </NavLink>
 
-        <NavLink to="/english" className={getLinkClass}>
-          <svg className={styles.icon}>
-            <use href={`${sprite}#icon-logo`} />
-          </svg>
-          English
-        </NavLink>
-      </nav>
+          <NavLink to="/english" className={getLinkClass}>
+            <svg className={styles.icon}>
+              <use href={`${sprite}#icon-logo`} />
+            </svg>
+            English
+          </NavLink>
+        </nav>
+      </div>
     </header>
   );
 };
