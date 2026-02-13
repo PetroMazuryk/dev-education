@@ -10,10 +10,36 @@
     justify-content: space-between;
 }
 
-.logo img {
-    height: 20px;
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logoImg {
+    width: 30px;
+    height: auto;
     border-radius: 6px;
-    display: block;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logoTop {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.logoBottom {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
 }
 
 .nav {
