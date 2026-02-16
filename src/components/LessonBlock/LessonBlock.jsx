@@ -1,5 +1,5 @@
-import CodeBlock from '../CodeBlock/CodeBlock';
-import InlineCode from '../InlineCode/InlineCode';
+import { CodeBlock } from '../CodeBlock/CodeBlock';
+import { InlineCode } from '../InlineCode/InlineCode';
 
 import styles from './LessonBlock.module.css';
 
