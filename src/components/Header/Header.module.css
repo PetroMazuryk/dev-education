@@ -3,28 +3,13 @@
     top: 0;
     z-index: 1000;
     background-color: #bfc7de;
-    padding: 12px 10px;
 }
 
-@media (min-width: 768px) {
-    .header {
-        padding: 16px 20px;
-    }
-}
 
-@media (min-width: 1200px) {
-    .header {
-        padding: 20px 140px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .header {
-        padding: 20px 360px;
-    }
-}
-
-.container {
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,4 +76,16 @@
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+
+@media (min-width: 768px) {
+    .inner {
+        padding: 16px 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .inner {
+        padding: 20px 20px;
+    }
 }

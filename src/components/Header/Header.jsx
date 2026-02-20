@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <div className={styles.inner}>
         <NavLink to="/" className={styles.logo}>
           <img src={logo} alt="Logo" className={styles.logoImg} />
 
