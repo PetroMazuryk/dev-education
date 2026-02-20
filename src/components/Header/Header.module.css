@@ -1,7 +1,27 @@
 .header {
-    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #bfc7de;
+    padding: 12px 10px;
+}
 
+@media (min-width: 768px) {
+    .header {
+        padding: 16px 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 20px 140px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        padding: 20px 360px;
+    }
 }
 
 .container {

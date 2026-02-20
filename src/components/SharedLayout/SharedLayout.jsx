@@ -13,13 +13,15 @@ const SharedLayout = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       <Header />
-      {!isAuthorized && <PasswordModal onSuccess={handleSuccessAuth} />}
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </div>
+      <div className={styles.container}>
+        {!isAuthorized && <PasswordModal onSuccess={handleSuccessAuth} />}
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </div>
+    </>
   );
 };
 
