@@ -80,12 +80,12 @@
 
 @media (min-width: 768px) {
     .inner {
-        padding: 16px 14px;
+        padding: 10px 14px;
     }
 }
 
 @media (min-width: 1200px) {
     .inner {
-        padding: 20px 20px;
+        padding: 14px 20px;
     }
 }

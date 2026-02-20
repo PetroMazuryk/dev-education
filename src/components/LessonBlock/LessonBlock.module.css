@@ -6,11 +6,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
 }
 
-
-
 .title {
-    display: flex;
-    margin: 0 0 6px;
     font-size: clamp(14px, 1.8vw, 18px);
 }
 
@@ -20,16 +16,12 @@
     padding-right: 4px;
 }
 
-
-
-
-
 .link {
+    display: inline-flex;
     margin-left: 10px;
     font-size: clamp(13px, 1.6vw, 16px);
     padding: 2px 8px;
     border-radius: 6px;
-    text-decoration: none;
     color: #dc2626;
     background-color: #fef2f2;
     transition: background-color 0.2s ease;
@@ -57,4 +49,12 @@
 
 details[open] .summary {
     color: #0646f6;
+}
+
+@media (min-width: 768px) {
+    .title {
+        display: flex;
+        margin: 0 0 6px;
+
+    }
 }
