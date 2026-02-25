@@ -29,7 +29,7 @@ export const Header = () => {
 
           <NavLink to="/tasks" className={getLinkClass}>
             <svg className={styles.icon}>
-              <use href={`${sprite}#icon-logo`} />
+              <use href={`${sprite}#icon-tasks`} />
             </svg>
             TasksJS
           </NavLink>
