@@ -9,7 +9,7 @@
 .inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 12px;
+    padding: 10px 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,7 +55,7 @@
 .link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 3px;
 
     color: #ffffff;
     text-decoration: none;
@@ -73,19 +73,20 @@
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     fill: currentColor;
+
 }
 
 @media (min-width: 768px) {
     .inner {
-        padding: 10px 14px;
+        padding: 8px 14px;
     }
 }
 
 @media (min-width: 1200px) {
     .inner {
-        padding: 14px 20px;
+        padding: 12px 20px;
     }
 }
