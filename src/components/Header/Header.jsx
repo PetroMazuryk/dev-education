@@ -4,7 +4,7 @@ import logo from 'assets/logo.png';
 import sprite from 'assets/sprite.svg';
 import styles from './Header.module.css';
 
-export const Header = () => {
+export const Header = ({ isOpen, onToggle }) => {
   const getLinkClass = ({ isActive }) =>
     isActive ? `${styles.link} ${styles.linkActive}` : styles.link;
 
@@ -41,6 +41,15 @@ export const Header = () => {
             English
           </NavLink>
         </nav>
+
+        <button
+          className={`${styles.burger} ${isOpen ? styles.active : ''}`}
+          onClick={onToggle}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
   );
