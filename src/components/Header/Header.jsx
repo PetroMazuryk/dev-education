@@ -36,7 +36,7 @@ export const Header = () => {
 
           <NavLink to="/english" className={getLinkClass}>
             <svg className={styles.icon}>
-              <use href={`${sprite}#icon-logo`} />
+              <use href={`${sprite}#icon-english`} />
             </svg>
             English
           </NavLink>
