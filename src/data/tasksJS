@@ -78,8 +78,80 @@ resolve([Promise.resolve(1), Promise.resolve(2)]).then(console.log); // 1
 resolve([Promise.reject(3), Promise.resolve(4)]).then(console.log); // 4
 resolve([Promise.reject(5), Promise.reject(6)]).catch(console.log); // [5, 6]`,
   },
-  {
+   {
     id: 3,
+   link: "https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",
+    title: "Реалізуй функцію 'resolve': Варіант 3 ",
+     requirements: [
+      "Функція приймає масив значень або Promise.,",
+      "Функція повинна повертати новий Promise.",
+      "📌 Логіка роботи:",
+      "✅ Якщо хоча б один проміс виконався успішно,",
+      "функція повинна: завершитися зі статусом resolve",
+      "повернути масив усіх успішних результатів.",
+      "❌ Якщо всі проміси завершилися з помилкою,",
+      "функція повинна: завершитися зі статусом reject",
+      "повернути масив усіх помилок (з урахуванням їхніх індексів).",
+    ],
+    starterCode: ` customPromiseResolver([Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)])
+// → resolves with [1, 2, 3]
+
+ customPromiseResolver([Promise.reject(4), Promise.resolve(5), Promise.resolve(6)])
+// → resolves with [5, 6]
+
+r customPromiseResolver([Promise.reject(7), Promise.reject(8), Promise.reject(9)])
+// → rejects with [7, 8, 9]`,
+    solution: `
+  function customPromiseResolver(promises) {
+  const errors = [];
+  let rejectedCount = 0;
+  const fulfilledValues = [];
+  let settledCount = 0;
+
+  return new Promise((resolve, reject) => {
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then(result => {
+          fulfilledValues.push(result);
+        })
+        .catch(error => {
+          errors[index] = error;
+          rejectedCount++;
+          if (rejectedCount === promises.length) {
+            reject(errors);
+          }
+        })
+        .finally(() => {
+          settledCount += 1;
+          if (settledCount === promises.length) {
+            resolve(fulfilledValues);
+          }
+        });
+    });
+  });
+}
+customPromiseResolver([
+  Promise.resolve(1),
+  Promise.resolve(2),
+  Promise.resolve(3),
+]).then(console.log);
+// [1, 2, 3]
+customPromiseResolver([
+  Promise.reject(4),
+  Promise.resolve(5),
+  Promise.resolve(6),
+]).then(console.log);
+// [5, 6]
+customPromiseResolver([
+  Promise.reject(7),
+  Promise.reject(8),
+  Promise.reject(9),
+]).catch(console.log);
+// [7, 8, 9]`,
+    description: ``,
+  },
+  {
+    id: 4,
     link: "https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",
     title: "Дано масив цілих натуральних чисел [ 1:07:00 ]",
     requirements: [
@@ -140,7 +212,7 @@ Map зберігає всі числа з однаковим ключем в м�
 у групу по одному.`,
   },
   {
-    id: 4,
+    id: 5,
     link: "",
     title: "Дано масив цілих натуральних чисел ",
     requirements: [
