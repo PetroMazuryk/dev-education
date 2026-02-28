@@ -43,7 +43,7 @@ export const Header = ({ isOpen, onToggle }) => {
 
           <NavLink to="/work" className={getLinkClass}>
             <svg className={styles.icon}>
-              <use href={`${sprite}#icon-english`} />
+              <use href={`${sprite}#icon-user-tie`} />
             </svg>
             Work
           </NavLink>

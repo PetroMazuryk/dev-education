@@ -35,7 +35,7 @@ export const MobileMenu = ({ isOpen, onClose }) => {
           </NavLink>
           <NavLink to="/work" onClick={onClose} className={getLinkClass}>
             <svg className={styles.icon}>
-              <use href={`${sprite}#icon-english`} />
+              <use href={`${sprite}#icon-user-tie`} />
             </svg>
             Work
           </NavLink>
