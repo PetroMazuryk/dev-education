@@ -11,6 +11,7 @@ function App() {
         <Route index element={<div>HomePage</div>} />
         <Route path="tasks" element={<TasksPage />} />
         <Route path="english" element={<div>English </div>} />
+        <Route path="work" element={<div>Work</div>} />
       </Route>
     </Routes>
   );
