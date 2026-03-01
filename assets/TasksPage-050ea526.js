@@ -1,4 +1,4 @@
-import{j as e}from"./index-fc24e93c.js";import{L as r}from"./LessonBlock-5fab33a8.js";const t=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-71490435.js";import{L as r}from"./LessonBlock-746224ad.js";const t=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -218,4 +218,73 @@ console.log(digitPermutation([111111111112, 1222222222])); // [[111111111112], [
    Примусово вивести «як у прикладі».  Варіант 1 — через JSON.stringify:
    console.log(JSON.stringify(digitPermutation([
   1230, 199, 2301, 1230, 110001, 3021, 101010, 991, 9
-])));`}],s="_title_f5mrh_1",i={title:s},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),t.map(o=>e.jsx(r,{task:o},o.id))]});export{c as default};
+])));`},{id:7,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"useCollback , useMemo  [ 32:24 ]",requirements:["Зробити так, щоб при рендері батька не ререндирився Child,","якщо не помінявся velue або onClick"],starterCode:`interface CompProps{ }
+
+function Child(onClick, value) { }
+
+export function Comp(props: CompProps) {
+    const onClick = () => { }
+    const value = {
+        num:'123'
+    }
+    return (
+        <div>
+    <Child value={value} onClick={onClick}/>
+        </div>
+    )
+}`,solution:`import React, { useCallback, useMemo } from 'react';
+
+interface CompProps {
+  title: string;
+}
+
+
+interface ChildProps {
+  onClick: () => void;
+  value: { num: string };
+}
+
+const Child: React.FC<ChildProps> = React.memo(({ onClick, value }) => {
+  console.log('Child render');
+  return (
+    <div>
+      <button onClick={onClick}>{value.num}</button>
+    </div>
+  );
+});
+
+export function Comp({ title }: CompProps) {
+ const [count, setCount] = React.useState(0);
+ 
+  const onClick = useCallback(() => {
+    console.log('Clicked in Child');
+  }, []);
+
+  const value = useMemo(() => ({ num: '123' }), []);
+  console.log('Parent render');
+
+  return (
+    <>
+        <h1>{title}</h1>
+      <button onClick={() => setCount(c => c + 1)}>
+        Parent + {count}
+      </button>
+
+      <Child value={value} onClick={onClick} />
+    </>
+  );
+}
+
+export default Comp;
+`,description:` useCallback фіксує функцію між ререндерингами. 
+    [] → функція створюється один раз. Посилання на onClick не змінюєтьсяю
+Child не рендериться повторно без потреби.
+useMemo фіксує об’єкт value, щоб він не створювався заново.
+React.memo запам’ятовує результат рендеру компонента і НЕ перерендерює його, якщо props
+ не змінилися (порівняння за ===). Тобто Child перерендериться лише тоді, коли:
+ зміниться onClick або зміниться value.
+memo - використовуєжться для компонентіа, відбувається поверхневе порівняння пропсів,
+і компонент буде бачити , що посилання на value не помінялося, onClick не помінявся.
+ а useMemo використовується для даних. Висновок:
+memo – оптимізація для компонентів (поверхневе порівняння пропсів).
+useMemo – оптимізація для даних.  useCallback – оптимізація для функцій.`}],s="_title_f5mrh_1",i={title:s},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),t.map(o=>e.jsx(r,{task:o},o.id))]});export{c as default};
