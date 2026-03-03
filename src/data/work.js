@@ -107,6 +107,17 @@ SET утримати 2–3 с → збереження налаштувань
   {
     id: 4,
     link: '',
+    title: ' SA-24 Штативи (ROTA) ',
+    requirements: [' '],
+    starterCode: `1 мл , 2мл – 1200 шт
+5 мл - 440 шт
+10 мл - 360 шт `,
+    solution: ``,
+    description: ``,
+  },
+  {
+    id: 1400,
+    link: '',
     title: '',
     requirements: [' '],
     starterCode: ``,
