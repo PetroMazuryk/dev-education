@@ -1,8 +1,11 @@
+import styles from './DepartmentSelect.module.css';
+
 export const DepartmentSelect = ({ value, onChange, options }) => {
   return (
-    <label>
-      Оберіть підрозділ:
-      <select value={value} onChange={onChange}>
+    <div className={styles.wrapper}>
+      <label className={styles.label}>Оберіть підрозділ:</label>
+
+      <select className={styles.select} value={value} onChange={onChange}>
         <option value="">Виберіть підрозділ:</option>
         {options.map((dept) => (
           <option key={dept} value={dept}>
@@ -10,6 +13,6 @@ export const DepartmentSelect = ({ value, onChange, options }) => {
           </option>
         ))}
       </select>
-    </label>
+    </div>
   );
 };

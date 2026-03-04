@@ -1,0 +1,58 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    max-width: 440px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    background-color: var(--color-text-secondary);
+
+    border-radius: 8px;
+
+    transition: 300ms ease;
+}
+
+
+.label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+
+.select {
+    flex: 1;
+    max-width: 260px;
+
+    padding: 3px 8px;
+    font-size: 16px;
+
+    color: #ffffff;
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+
+.select:hover {
+    border-color: #ff6b00;
+}
+
+
+.select:focus {
+    outline: none;
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.3);
+}
+
+
+.select option {
+    color: #000;
+}
