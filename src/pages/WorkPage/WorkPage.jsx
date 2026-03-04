@@ -6,8 +6,8 @@ import { maint } from '../../data/work/maint';
 import styles from './WorkPage.module.css';
 
 const workData = {
-  WORK: work,
-  MAINT: maint,
+  work_SA24: work,
+  maint: maint,
 };
 
 const WorkPage = () => {
