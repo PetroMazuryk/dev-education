@@ -437,6 +437,69 @@ fetching(5);`,
        системи або сервера.`,
   },
   {
+    id: 9,
+    link: 'https://www.youtube.com/watch?v=hkrmyIecHR0&ab_channel=UlbiTV',
+    title: 'Реалізація debounce [ 26:25 ]',
+    requirements: ['Щоб крім пятірки, ще появлявся Bob '],
+    starterCode: `const fetchUrl = url => {
+  console.log(\`fetching \${url}...\`, this.firstName);
+};
+const user = {
+    firstName: 'Bob',
+};
+
+function debounce(callback, delay) {
+  let timer = null;
+  return (...args) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  };
+}
+
+const fetching = debounce(fetchUrl, 300);
+
+fetching(1);
+fetching(2);
+fetching(3);
+fetching(4);
+fetching(5);`,
+    solution: `const fetchUrl2 = function (url) {
+  console.log(\`fetching \${url}...\`, this.firstName); //  fetching 5... Bob
+};
+
+const user = {
+  firstName: 'Bob',
+};
+
+function debounce(callback, delay) {
+  let timer = null;
+  return (...args) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  };
+}
+const fetching2 = debounce(fetchUrl2.bind(user), 300);
+
+fetching2(1);
+fetching2(2);
+fetching2(3);
+fetching2(4);`,
+    description: `Щоб ще виводився Bob (поміняв стрілку на function + bind(user)). 
+    Стрілочна функція не має власного this. Вона лексично захоплює this з зовнішнього скоупу
+(у браузері це window, у strict — undefined).
+Якщо додати ще один bind, тобто const fetching2 = debounce(fetchUrl2.bind(user).bind({}), 300).
+То все одно виведе fetching 5... Bob, тому що другий bind не змінює this,
+оскільки this вже зафіксований першим bind. ( Запамятовує перший контекст.)`,
+  },
+  {
     id: 24,
     link: '',
     title: ' ',
