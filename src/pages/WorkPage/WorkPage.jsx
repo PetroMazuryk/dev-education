@@ -4,12 +4,14 @@ import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSe
 
 import { work } from '../../data/work/sa-24';
 import { maint } from '../../data/work/maint';
+import { screen } from '../../data/work/screen';
 
 import styles from './WorkPage.module.css';
 
 const workData = {
   work_SA24: work,
   maint: maint,
+  screen: screen,
 };
 
 const WorkPage = () => {
@@ -32,7 +34,7 @@ const WorkPage = () => {
       />
 
       {filteredWork.length === 0 && selectedDept && (
-        <p>Немає записів для цього підрозділу</p>
+        <p>Немає записів для цього підрозділу.</p>
       )}
 
       {filteredWork.map((task) => (
