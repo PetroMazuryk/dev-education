@@ -13,7 +13,7 @@ const workData = {
 };
 
 const WorkPage = () => {
-  const [selectedDept, setSelectedDept] = useState('');
+  const [selectedDept, setSelectedDept] = useState(Object.keys(workData)[0]);
 
   const handleChange = (e) => {
     setSelectedDept(e.target.value);
