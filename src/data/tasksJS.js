@@ -500,6 +500,72 @@ fetching2(4);`,
 оскільки this вже зафіксований першим bind. ( Запамятовує перший контекст.)`,
   },
   {
+    id: 9,
+    link: 'https://www.youtube.com/watch?v=hkrmyIecHR0&ab_channel=UlbiTV',
+    title: 'Деревовидна структура [ 28:38 ]',
+    requirements: [
+      'Пройтися по всій структурі та зібрати values в масив.',
+      'Використати ітеративний підхід (через стек)',
+    ],
+    starterCode: `const tree = {
+  value: 1,
+  children: [
+    {
+      value: 2,
+      children: [{ value: 3 }],
+    },
+    {
+      value: 4,
+      children: [{ value: 5 }, { value: 6 }],
+    },
+  ],
+};
+function getTreeValues(tree) {
+  // your code here
+}
+console.log(getTreeValues(tree)); // [1,4,6,5,2,3]`,
+    solution: `const tree = {
+  value: 1,
+  children: [
+    {
+      value: 2,
+      children: [{ value: 3 }],
+    },
+    {
+      value: 4,
+      children: [{ value: 5 }, { value: 6 }],
+    },
+  ],
+};
+function getTreeValues(tree) {
+  const stack = [tree];
+
+  const result = [];
+
+  while (stack.length > 0) {
+    const node = stack.pop();
+    if (node.value !== undefined) {
+      result.push(node.value);
+    }
+    if (node.children?.length) {
+      stack.push(...node.children);
+    }
+    // if (node.children) {
+    //   // додаємо у зворотному порядку, щоб порядок DFS зберігся
+    //   // DFS (Depth-First Search) — це пошук у глибину, один із базових алгоритмів обходу графів та дерев.
+    //  // Графи — це структури даних, які описують зв’язки між об’єктами.
+    //   for (let i = node.children.length - 1; i >= 0; i--) {
+    //     stack.push(node.children[i]);
+    //   }
+    // }
+  }
+  return result;
+}
+console.log(getTreeValues(tree)); // [1,4,6,5,2,3]`,
+    description: `Якщо велика вкладеність, то краще через стек, щоб уникнути помилки
+     переповнення.`,
+  },
+  {
     id: 24,
     link: '',
     title: ' ',
