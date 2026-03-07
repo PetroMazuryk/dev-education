@@ -5,6 +5,7 @@ import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSe
 import { work } from '../../data/work/sa-24';
 import { maint } from '../../data/work/maint';
 import { screen } from '../../data/work/screen';
+import { maintQuestions } from '../../data/work/maintQuestions';
 
 import styles from './WorkPage.module.css';
 
@@ -12,6 +13,7 @@ const workData = {
   work_SA24: work,
   maint: maint,
   screen: screen,
+  maintQuestions: maintQuestions,
 };
 
 const WorkPage = () => {
