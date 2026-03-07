@@ -1,4 +1,4 @@
-import{j as e}from"./index-e0fbded4.js";import{L as t}from"./LessonBlock-d0a71fd2.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-b0251d7e.js";import{L as t}from"./LessonBlock-34521f98.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -434,4 +434,67 @@ function getTreeValues(tree) {
   return result;
 }
 console.log(getTreeValues(tree)); // [1,4,6,5,2,3]`,description:`Якщо велика вкладеність, то краще через стек, щоб уникнути помилки
-     переповнення.`},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],i="_title_f5mrh_1",s={title:i},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:s.title,children:"Задачі JS"}),r.map(o=>e.jsx(t,{task:o},o.id))]});export{c as default};
+     переповнення.`},{id:10,link:"",title:"Деревовидна структура: Варіант 2",requirements:["Пройтися по всій структурі та зібрати values в масив.","Використати рекурсивний підхід"],starterCode:`const tree = {
+  value: 1,
+  children: [
+    {
+      value: 2,
+      children: [{ value: 3 }],
+    },
+    {
+      value: 4,
+      children: [{ value: 5 }, { value: 6 }],
+    },
+  ],
+};
+function getTreeValues(tree) {
+  // your code here
+}
+console.log(getTreeValues(tree)); // [1,4,6,5,2,3]`,solution:`const tree = {
+  value: 1,
+  children: [
+    {
+      value: 2,
+      children: [{ value: 3 }],
+    },
+    {
+      value: 4,
+      children: [{ value: 5 }, { value: 6 }],
+    },
+  ],
+};
+
+function getTreeValuesRecursive(node) {
+   const values = [node.value];  // починаємо з поточного вузла
+  if (node.children) {
+    for (const child of node.children) {
+      values.push(...getTreeValuesRecursive(child)); // рекурсивно додаємо значення дітей
+    }
+  }
+  return values;
+}
+const values = getTreeValuesRecursive(tree);
+console.log(values); // [1,2,3,4,5,6]
+
+// 2  знайти суму всіх значень value
+const sum = values.reduce((acc, val) => acc + val, 0);
+console.log(sum); // 21
+
+// 3  знайти суму всіх значень value за допомогою ф-ції getTreeSum
+function getTreeSum(node) {
+  let sum = node.value || 0;
+  if (node.children) {
+    for (const child of node.children) {
+      sum += getTreeSum(child);
+    }
+  }
+  return sum;
+}
+console.log(getTreeSum(tree)); // 21
+`,description:`Створюємо масив values із поточним вузлом
+Якщо є children, то для кожного викликаємо функцію рекурсивно
+Через ... додаємо всі значення дочірніх вузлів в масив
+Повертаємо масив. Рекурсія в JS обмежена ~10000 викликів.
+ Для невеликої глибини проблем не буде. Якщо потрібно швидко отримати
+ масив значень або обробити вузли — рекурсія економить час. Якщо дерево дуже глибоке (1000+ рівнів) →
+ рекурсія може викликати RangeError: Maximum call stack size exceeded`},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],i="_title_f5mrh_1",s={title:i},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:s.title,children:"Задачі JS"}),r.map(o=>e.jsx(t,{task:o},o.id))]});export{c as default};
