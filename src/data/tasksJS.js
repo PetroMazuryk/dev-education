@@ -752,6 +752,77 @@ export default NewsPage;
    `,
   },
   {
+    id: 13,
+    link: 'https://www.youtube.com/watch?v=hkrmyIecHR0&ab_channel=UlbiTV',
+    title: 'Відмінність any від unknown [38:21]',
+    requirements: [
+      'any і unknown обидва означають “невідомий тип”, але поводяться принципово по-різному ',
+    ],
+    starterCode: `const user = await fetch().json();  // any
+function someFn(str: string) {
+}
+someFn(user) // якщо ми в цю ф-цію передамо масив юзерів то TypeScript не видасть помилку
+// Якщо user насправді масив або об’єкт — помилка з’явиться лише в runtime
+
+const user = await fetch().json();  // unknown
+function someFn(str: string) {
+}
+someFn(user) // ПОМИЛКА TS: Argument of type 'unknown' is not assignable to parameter of type 'string'.`,
+    solution: `
+any — вимикає TypeScript. ✅ TypeScript дозволяє все. ❌ Помилки з’являться тільки під час виконання.
+з unknown TypeScript забороняє будь-які дії, поки ти не перевіриш тип. unknown = “я не знаю тип, доведи мені”.
+
+if (typeof value === "string") {
+  value.toUpperCase(); // ✅
+}
+Присвоєння типів
+let a: any = 5;
+let b: number = a; // ✅
+
+let u: unknown = 5;
+let c: number = u; // ❌
+
+Правильно з unknown:
+if (typeof u === "number") {
+  c = u; // ✅
+}
+
+Реальний приклад (API / JSON)
+function parse(data: unknown) {
+  if (typeof data === "object" && data !== null && "name" in data) {
+    return (data as { name: string }).name;
+  }
+}
+Не використовуй any:
+у Redux
+у React props
+у відповідях API
+
+✅ Використовуй unknown:
+при роботі з JSON.parse
+з API
+у catch (error: unknown)
+коли тип реально невідомий
+
+Реальний приклад використання
+const response: unknown = await fetch().json();
+
+const name = parse(response);
+
+if (name) {
+  console.log(name.toUpperCase());
+}
+
+Коротко запамʼятати:
+unknown → перевіряй перед використанням
+typeof data === "object" → відсіює примітиви
+data !== null → обовʼязково! , бо typeof null === "object"
+"name" in data → перевірка поля
+as → пояснює тип TS, не перевіряє його
+`,
+    description: ``,
+  },
+  {
     id: 24,
     link: '',
     title: ' ',
