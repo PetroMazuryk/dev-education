@@ -823,6 +823,35 @@ as → пояснює тип TS, не перевіряє його
     description: ``,
   },
   {
+    id: 14,
+    link: 'https://www.youtube.com/watch?v=nqwJDi-z738',
+    title: 'На синхронність JavaScript  [ 41:00 ]',
+    requirements: ['В якій послідовності виведуться console.log'],
+    starterCode: `console.log('0');
+
+setTimeout(function timeuot() {
+  console.log('1');
+}, 100);
+
+let p = new Promise(function (resolve, reject) {
+  console.log('2');
+  resolve();
+});
+
+p.then(function () {
+  console.log('3');
+});
+
+setTimeout(function timeout() {
+  console.log('5');
+}, 0);
+console.log('6');`,
+    solution: `
+     // 0 2 6 3 5 1 ) Створення нового  промісу це синхронний код
+    `,
+    description: ``,
+  },
+  {
     id: 24,
     link: '',
     title: ' ',
