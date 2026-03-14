@@ -1,4 +1,4 @@
-import{j as e}from"./index-cb1a2618.js";import{L as o}from"./LessonBlock-670ef781.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-4b1100b2.js";import{L as o}from"./LessonBlock-fde9b909.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -712,4 +712,31 @@ function range(arr) {
   return result.join();
 }
  console.log(range([1, 4, 5, 2, 3, 9, 8, 11, 0])); // 0-5,8-9,11
- console.log(range([1, 4, 3, 2])); // 1-4`,description:""},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",s={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:s.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
+ console.log(range([1, 4, 3, 2])); // 1-4`,description:""},{id:16,link:"https://www.youtube.com/watch?v=nqwJDi-z738",title:"Розкласти масив на рядок з діапазонами [42:57]",requirements:["Варіант 2"],starterCode:`range([1, 4, 5, 2, 3, 9, 8, 11, 0]);
+range([1, 4, 3, 2]);
+
+function range(arr) {
+  // your code here
+  }`,solution:`function range(arr) {
+  if (!arr.length) return '';
+
+  const sorted = [...arr].sort((a, b) => a - b);
+  const result = [];
+  let start = sorted[0];
+  for (let i = 1; i <= sorted.length; i++) {
+    // якщо кінець послідовності
+    if (sorted[i] !== sorted[i - 1] + 1) {
+      const end = sorted[i - 1];
+     result.push(start === end ? String(start) : start + '-' + end);
+      start = sorted[i];
+    }
+  }
+  // додати останній діапазон якщо for (let i = 1; i < sorted.length; i++)
+  // const end = sorted[sorted.length - 1];
+  // result.push(start === end ? String(start) : start + '-' + end);
+  return result.join(', ');
+}
+
+console.log(range([1, 4, 5, 2, 3, 9, 8, 11, 0])); // 0-5, 8-9, 11
+console.log(range([1, 4, 3, 2])); // 1-4
+console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,description:""},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",s={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:s.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
