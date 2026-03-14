@@ -1,4 +1,4 @@
-import{j as e}from"./index-4b1100b2.js";import{L as o}from"./LessonBlock-fde9b909.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-04dd3836.js";import{L as o}from"./LessonBlock-4dae17fe.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -739,4 +739,22 @@ function range(arr) {
 
 console.log(range([1, 4, 5, 2, 3, 9, 8, 11, 0])); // 0-5, 8-9, 11
 console.log(range([1, 4, 3, 2])); // 1-4
-console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,description:""},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",s={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:s.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
+console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,description:""},{id:17,link:"https://www.youtube.com/watch?v=DgyHiUmi6SU&ab_channel=WebDev%D1%81%D0%BD%D",title:"Написати код який генерує список з N простих чисел",requirements:["Варіант з for"],starterCode:"",solution:`function generatePrimesOne(count) {
+  const primes = [];
+  let primeCandidate = 2;
+  while (primes.length !== count) {
+    let candidateIsPrime = true;
+    for (let i = 2; i <= Math.sqrt(primeCandidate); i++) {
+      if (primeCandidate % i === 0) {
+        candidateIsPrime = false;
+        break;
+      }
+    }
+
+    if (candidateIsPrime) primes.push(primeCandidate);
+
+    primeCandidate += 1;
+  }
+  return primes;
+}
+ console.log(generatePrimesOne(10));  // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
