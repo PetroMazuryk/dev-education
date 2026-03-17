@@ -1,4 +1,4 @@
-import{j as e}from"./index-b5d59935.js";import{L as o}from"./LessonBlock-836b61d7.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-1bd4d213.js";import{L as o}from"./LessonBlock-7d658f94.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -757,4 +757,20 @@ console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,description:""},{id:17
   }
   return primes;
 }
- console.log(generatePrimesOne(10));  // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:24,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:26,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:28,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
+ console.log(generatePrimesOne(10));  // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:18,link:"https://www.youtube.com/watch?v=DgyHiUmi6SU&ab_channel=WebDev%D1%81%D0%BD%D",title:"Написати функцію generatePrimes(count), яка генерує масив з перших count простих чисел.",requirements:["Варіант з every","count — ціле невід’ємне число, яке визначає, скільки простих чисел потрібно згенерувати.","Масив, що містить рівно count простих чисел у зростаючому порядку, починаючи з числа 2"],starterCode:"",solution:`function generatePrimes(count) {
+  const primes = [];
+  let candidate = 2;
+
+  while (primes.length < count) {
+    const isPrime = primes.every(
+      p => candidate % p !== 0
+    );
+
+    if (isPrime) primes.push(candidate);
+    candidate++;
+  }
+
+  return primes;
+}
+
+console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:124,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:126,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:128,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
