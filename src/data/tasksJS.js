@@ -961,7 +961,37 @@ console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,
     description: ``,
   },
   {
-    id: 24,
+    id: 18,
+    link: 'https://www.youtube.com/watch?v=DgyHiUmi6SU&ab_channel=WebDev%D1%81%D0%BD%D',
+    title:
+      'Написати функцію generatePrimes(count), яка генерує масив з перших count простих чисел.',
+    requirements: [
+      'Варіант з every',
+      'count — ціле невід’ємне число, яке визначає, скільки простих чисел потрібно згенерувати.',
+      'Масив, що містить рівно count простих чисел у зростаючому порядку, починаючи з числа 2',
+    ],
+    starterCode: ``,
+    solution: `function generatePrimes(count) {
+  const primes = [];
+  let candidate = 2;
+
+  while (primes.length < count) {
+    const isPrime = primes.every(
+      p => candidate % p !== 0
+    );
+
+    if (isPrime) primes.push(candidate);
+    candidate++;
+  }
+
+  return primes;
+}
+
+console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,
+    description: ``,
+  },
+  {
+    id: 124,
     link: '',
     title: ' ',
     requirements: ['Створення '],
@@ -970,7 +1000,7 @@ console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,
     description: ``,
   },
   {
-    id: 26,
+    id: 126,
     link: '',
     title: ' ',
     requirements: ['Створення '],
@@ -979,7 +1009,7 @@ console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,
     description: ``,
   },
   {
-    id: 28,
+    id: 128,
     link: '',
     title: ' ',
     requirements: ['Створення '],
