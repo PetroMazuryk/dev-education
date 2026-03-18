@@ -16,4 +16,22 @@ export const bosch_KLD_1042 = [
     solution: ``,
     description: ``,
   },
+  {
+    id: 2,
+    link: '',
+    title: 'Помилка unknown - невідомий',
+    requirements: [' вх. датчик не побачив, вих. датчик - побачив'],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
+    id: 1400,
+    link: '',
+    title: '',
+    requirements: [' '],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
 ];
