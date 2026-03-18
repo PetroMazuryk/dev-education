@@ -1,4 +1,4 @@
-import{j as e}from"./index-e4354318.js";import{L as o}from"./LessonBlock-b31b9987.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-4020d3f8.js";import{L as o}from"./LessonBlock-2510f30d.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -773,4 +773,26 @@ console.log(range([7, 10, 11, 12, 20])); // 7, 10-12, 20`,description:""},{id:17
   return primes;
 }
 
-console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:124,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:126,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:128,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
+console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,description:""},{id:19,link:"https://www.youtube.com/watch?v=DgyHiUmi6SU&ab_channel=WebDev%D1%81%D0%BD%D",title:"Вивести прості числа",requirements:["Написати функцію getPrimeNumbers(n), яка повертає масив усіх простих чисел від 2 до n включно.",""],starterCode:`j * j <= i еквівалентно j <= √i, але без обчислення
+ квадратного кореня (Math.sqrt(i)), що швидше.`,solution:`function getPrimeNumbers(n) {
+  const prime = [];
+
+  for (let i = 2; i <= n; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j * j <= i; j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+
+    if (isPrime) {
+      prime.push(i);
+    }
+  }
+    
+  return prime;
+}
+console.log(getPrimeNumbers(20)); [2, 3, 5, 7, 11, 13, 17, 19]
+`,description:""},{id:124,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:126,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:128,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
