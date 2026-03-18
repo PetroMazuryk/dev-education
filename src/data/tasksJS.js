@@ -991,6 +991,40 @@ console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,
     description: ``,
   },
   {
+    id: 19,
+    link: 'https://www.youtube.com/watch?v=DgyHiUmi6SU&ab_channel=WebDev%D1%81%D0%BD%D',
+    title: 'Вивести прості числа',
+    requirements: [
+      'Написати функцію getPrimeNumbers(n), яка повертає масив усіх простих чисел від 2 до n включно.',
+      '',
+    ],
+    starterCode: `j * j <= i еквівалентно j <= √i, але без обчислення
+ квадратного кореня (Math.sqrt(i)), що швидше.`,
+    solution: `function getPrimeNumbers(n) {
+  const prime = [];
+
+  for (let i = 2; i <= n; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j * j <= i; j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+
+    if (isPrime) {
+      prime.push(i);
+    }
+  }
+    
+  return prime;
+}
+console.log(getPrimeNumbers(20)); [2, 3, 5, 7, 11, 13, 17, 19]
+`,
+    description: ``,
+  },
+  {
     id: 124,
     link: '',
     title: ' ',
