@@ -1,4 +1,4 @@
-import{j as e}from"./index-4020d3f8.js";import{L as o}from"./LessonBlock-2510f30d.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
+import{j as e}from"./index-afefed00.js";import{L as o}from"./LessonBlock-a327657f.js";const r=[{id:1,link:"https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s",title:"Проміс. Реалізуй функцію 'resolve' [ 55:20 ]",requirements:["На вхід функції передається масив промісів, а на виході вона повертає новий проміс.","Новий проміс працює за такими правилами:","1) Якщо в масиві є хоча б один успішний проміс — повернути результат цього промісу.","2) Якщо всі проміси завершуються з reject — повернути reject з масивом усіх помилок."],inlineCode:"Вихід: Кейс 1 — Promise => 5 ; Кейс 2 — Promise => Error(errors) ;",starterCode:`function resolve(promises) {}
 [Promise.resolve(1), Promise.resolve(2)];
 [Promise.reject(3), Promise.resolve(4)];
 [Promise.reject(5), Promise.reject(6)];`,solution:`function resolve(promises) {
@@ -795,4 +795,9 @@ console.log(generatePrimes(10)); // [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]`,descri
   return prime;
 }
 console.log(getPrimeNumbers(20)); [2, 3, 5, 7, 11, 13, 17, 19]
-`,description:""},{id:124,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:126,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:128,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
+`,description:""},{id:20,link:"https://www.youtube.com/watch?v=YA6yZ_KUIYA&ab_channel=wise.js",title:"Знайти суму елементів масиву",requirements:[""],starterCode:"const array = [1, 2, 2, 4, 5, 6, 6];",solution:`const array = [1, 2, 2, 4, 5, 6, 6];
+let sum = 0;
+for (let i = 0; i < array.length; i++) {
+  sum += array[i];
+}
+console.log(sum); //26`,description:""},{id:124,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:126,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""},{id:128,link:"",title:" ",requirements:["Створення "],starterCode:"",solution:"",description:""}],n="_title_f5mrh_1",i={title:n},c=()=>e.jsxs("main",{style:{padding:"4px"},children:[e.jsx("h2",{className:i.title,children:"Задачі JS"}),r.map(t=>e.jsx(o,{task:t},t.id))]});export{c as default};
