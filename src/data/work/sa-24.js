@@ -20,7 +20,7 @@ export const work = [
     title: ' SA-24 Штативи (ROTA) ',
     requirements: [' '],
     starterCode: `1 мл , 2мл – 1200 шт
-5 мл - 440 шт
+5 мл - 560 шт
 10 мл - 360 шт `,
     solution: ``,
     description: ``,
