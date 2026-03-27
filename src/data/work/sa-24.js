@@ -28,6 +28,17 @@ export const work = [
   {
     id: 3,
     link: '',
+    title: ' SA-24 Штативи (CORIMA) ',
+    requirements: [' '],
+    starterCode: `1 мл , 2мл –715 шт
+5 мл -  шт
+10 мл -  шт `,
+    solution: ``,
+    description: ``,
+  },
+  {
+    id: 4,
+    link: '',
     title: 'SA-24. Test set 5 разів - на початку зміни та через 20 годин. ',
     requirements: [' '],
     starterCode: `Без пригарів  5 добрі / 9 погані,
@@ -38,7 +49,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 4,
+    id: 5,
     link: '',
     title: 'SA-24 Тест сет пригари',
     requirements: [' '],
