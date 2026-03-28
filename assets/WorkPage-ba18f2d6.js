@@ -1,4 +1,4 @@
-import{j as e,r as a}from"./index-87b464d6.js";import{L as d}from"./LessonBlock-c90f18b7.js";const c="_wrapper_1jwtr_1",u="_label_1jwtr_18",m="_select_1jwtr_26",o={wrapper:c,label:u,select:m},p=({value:t,onChange:s,options:n})=>e.jsxs("div",{className:o.wrapper,children:[e.jsx("label",{className:o.label,children:"Оберіть підрозділ:"}),e.jsxs("select",{className:o.select,value:t,onChange:s,children:[e.jsx("option",{value:"",children:"Виберіть підрозділ:"}),n.map(i=>e.jsx("option",{value:i,children:i},i))]})]}),D=[{id:1,link:"",title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{j as e,r as a}from"./index-73286015.js";import{L as d}from"./LessonBlock-31d8959b.js";const c="_wrapper_1jwtr_1",u="_label_1jwtr_18",m="_select_1jwtr_26",o={wrapper:c,label:u,select:m},p=({value:t,onChange:s,options:n})=>e.jsxs("div",{className:o.wrapper,children:[e.jsx("label",{className:o.label,children:"Оберіть підрозділ:"}),e.jsxs("select",{className:o.select,value:t,onChange:s,children:[e.jsx("option",{value:"",children:"Виберіть підрозділ:"}),n.map(i=>e.jsx("option",{value:i,children:i},i))]})]}),D=[{id:1,link:"",title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
@@ -7,7 +7,7 @@ import{j as e,r as a}from"./index-87b464d6.js";import{L as d}from"./LessonBlock-
 `,solution:"",description:""},{id:2,link:"",title:" SA-24 Штативи (ROTA) ",requirements:[" "],starterCode:`1 мл , 2мл – 1200 шт
 5 мл - 560 шт
 10 мл - 360 шт `,solution:"",description:""},{id:3,link:"",title:" SA-24 Штативи (CORIMA) ",requirements:[" "],starterCode:`1 мл , 2мл –715 шт
-5 мл -  шт
+5 мл - 375 шт
 10 мл -  шт `,solution:"",description:""},{id:4,link:"",title:"SA-24. Test set 5 разів - на початку зміни та через 20 годин. ",requirements:[" "],starterCode:`Без пригарів  5 добрі / 9 погані,
 З пригарами 5 добрі / 11 погані,
 перевірка на колірність плюс 1 ам №15,
