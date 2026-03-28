@@ -1,7 +1,6 @@
 export const work = [
   {
     id: 1,
-    link: '',
     title: 'SA-24 Світловий потік з чашками 2 кам / 3 кам: ',
     requirements: [' '],
     starterCode: `1 мл, 2 мл -  50 000 / 70 000 Lux
@@ -16,7 +15,6 @@ export const work = [
   },
   {
     id: 2,
-    link: '',
     title: ' SA-24 Штативи (ROTA) ',
     requirements: [' '],
     starterCode: `1 мл , 2мл – 1200 шт
@@ -27,7 +25,6 @@ export const work = [
   },
   {
     id: 3,
-    link: '',
     title: ' SA-24 Штативи (CORIMA) ',
     requirements: [' '],
     starterCode: `1 мл , 2мл –715 шт
@@ -38,7 +35,6 @@ export const work = [
   },
   {
     id: 4,
-    link: '',
     title: 'SA-24. Test set 5 разів - на початку зміни та через 20 годин. ',
     requirements: [' '],
     starterCode: `Без пригарів  5 добрі / 9 погані,
@@ -50,7 +46,6 @@ export const work = [
   },
   {
     id: 5,
-    link: '',
     title: 'SA-24 Тест сет пригари',
     requirements: [' '],
     starterCode: `Аспаркам 5 мл,
@@ -68,8 +63,20 @@ export const work = [
     description: ``,
   },
   {
-    id: 1400,
-    link: '',
+    id: 6,
+    title: 'Не має вакуму на 6 зірці',
+    requirements: [' '],
+    starterCode: `Беремо ручнік та коли на клапані вакуму
+загоряється червоний світлодіод, відєднуємо синю трубку від 
+фільтра та перевіряємо чи є вакум.
+Якщо не має а зверху дує повітря.
+Тоді відкручуємо та промиваємо ситечко клапану.
+`,
+    solution: ``,
+    description: ``,
+  },
+  {
+    id: 99,
     title: '',
     requirements: [' '],
     starterCode: ``,
