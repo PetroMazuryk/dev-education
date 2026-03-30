@@ -29,7 +29,7 @@ export const work = [
     requirements: [' '],
     starterCode: `1 мл , 2мл –715 шт
 5 мл - 375 шт
-10 мл -  шт `,
+10 мл - 250  шт `,
     solution: ``,
     description: ``,
   },
