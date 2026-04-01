@@ -54,7 +54,10 @@ export const bosch_KLD_1042 = [
   {
     id: 6,
     title: 'LEBAL SHL-2580 - маркіратор',
-    requirements: ['Збити лічильник --- Shift + F1 '],
+    requirements: [
+      'Обнулити лічильник загальний --- Shift + F1 ',
+      'Обнулити лічильник короба --- вимкнути та увімкнути машину ',
+    ],
     starterCode: ``,
     solution: ``,
     description: ``,
