@@ -27,7 +27,7 @@ export const work = [
     id: 3,
     title: ' SA-24 Штативи (CORIMA) ',
     requirements: [' '],
-    starterCode: `1 мл , 2мл –715 шт
+    starterCode: `1 мл , 2 мл –715 шт
 5 мл - 375 шт
 10 мл - 250  шт `,
     solution: ``,
