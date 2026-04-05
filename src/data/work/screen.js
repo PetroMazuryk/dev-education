@@ -11,4 +11,13 @@ export const screen = [
     solution: ``,
     description: ``,
   },
+  {
+    id: 2,
+    title: '',
+    requirements: [' '],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+    images: ['/images/img_1.jpg', '/images/img_2.jpg'],
+  },
 ];

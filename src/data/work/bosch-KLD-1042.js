@@ -62,6 +62,7 @@ export const bosch_KLD_1042 = [
     solution: ``,
     description: ``,
   },
+
   {
     id: 99,
     title: '',
@@ -69,6 +70,6 @@ export const bosch_KLD_1042 = [
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: ['/images/img_1.jpg', '/images/img_2.jpg'],
+    images: [''],
   },
 ];
