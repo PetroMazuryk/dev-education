@@ -18,6 +18,6 @@ export const screen = [
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: ['/images/img_1.jpg', '/images/img_2.jpg'],
+    images: ['/images/img_1.jpg'],
   },
 ];
