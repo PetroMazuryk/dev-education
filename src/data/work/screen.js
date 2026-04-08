@@ -13,11 +13,11 @@ export const screen = [
   },
   {
     id: 2,
-    title: '',
+    title: 'Розрахунок струму двигуна',
     requirements: [' '],
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: ['/images/img_1.jpg'],
+    images: ['/images/img_4.jpg'],
   },
 ];
