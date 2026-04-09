@@ -7,6 +7,7 @@ import { maint } from '../../data/work/maint';
 import { screen } from '../../data/work/screen';
 import { maintQuestions } from '../../data/work/maintQuestions';
 import { bosch_KLD_1042 } from '../../data/work/bosch-KLD-1042';
+import { home_appliance } from '../../data/work/home_appliance ';
 
 import styles from './WorkPage.module.css';
 
@@ -16,6 +17,7 @@ const workData = {
   screen: screen,
   maintQuestions: maintQuestions,
   bosch_KLD_1042: bosch_KLD_1042,
+  home_appliance: home_appliance,
 };
 
 const WorkPage = () => {
