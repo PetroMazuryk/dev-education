@@ -1,3 +1,5 @@
+import { img } from '/src/utils/img';
+
 export const screen = [
   {
     id: 1,
@@ -18,6 +20,6 @@ export const screen = [
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: ['/images/img_4.jpg'],
+    images: [img('images/img_4.jpg')],
   },
 ];
