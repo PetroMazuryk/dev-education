@@ -6,42 +6,19 @@ export const Image = ({ src, alt }) => {
   const [scale, setScale] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const [isDragging, setIsDragging] = useState(false);
+  const isDragging = useRef(false);
   const start = useRef({ x: 0, y: 0 });
 
-  const handleWheel = (e) => {
-    e.preventDefault();
-
-    const rect = e.currentTarget.getBoundingClientRect();
-
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-
-    const zoom = e.deltaY < 0 ? 1.1 : 0.9;
-    let newScale = scale * zoom;
-
-    newScale = Math.min(Math.max(1, newScale), 5);
-
-    const scaleRatio = newScale / scale;
-
-    setPosition((prev) => ({
-      x: mouseX - (mouseX - prev.x) * scaleRatio,
-      y: mouseY - (mouseY - prev.y) * scaleRatio,
-    }));
-
-    setScale(newScale);
-  };
-
-  const handleMouseDown = (e) => {
-    setIsDragging(true);
+  const handlePointerDown = (e) => {
+    isDragging.current = true;
     start.current = {
       x: e.clientX - position.x,
       y: e.clientY - position.y,
     };
   };
 
-  const handleMouseMove = (e) => {
-    if (!isDragging) return;
+  const handlePointerMove = (e) => {
+    if (!isDragging.current) return;
 
     setPosition({
       x: e.clientX - start.current.x,
@@ -49,7 +26,20 @@ export const Image = ({ src, alt }) => {
     });
   };
 
-  const stopDragging = () => setIsDragging(false);
+  const stopDragging = () => {
+    isDragging.current = false;
+  };
+
+  const handleWheel = (e) => {
+    e.preventDefault();
+
+    const zoom = e.deltaY < 0 ? 1.1 : 0.9;
+    let newScale = scale * zoom;
+
+    newScale = Math.min(Math.max(1, newScale), 5);
+
+    setScale(newScale);
+  };
 
   const close = () => {
     setIsOpen(false);
@@ -74,14 +64,14 @@ export const Image = ({ src, alt }) => {
             className={styles.fullImage}
             style={{
               transform: `translate(${position.x}px, ${position.y}px) scale(${scale})`,
-              cursor: isDragging ? 'grabbing' : 'grab',
+              cursor: isDragging.current ? 'grabbing' : 'grab',
             }}
             onClick={(e) => e.stopPropagation()}
+            onPointerDown={handlePointerDown}
+            onPointerMove={handlePointerMove}
+            onPointerUp={stopDragging}
+            onPointerLeave={stopDragging}
             onWheel={handleWheel}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={stopDragging}
-            onMouseLeave={stopDragging}
           />
         </div>
       )}

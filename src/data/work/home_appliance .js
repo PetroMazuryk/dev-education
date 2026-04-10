@@ -2,7 +2,7 @@ export const home_appliance = [
   {
     id: 1,
     title: 'Пральна машинка Electorlux EWT 10620 W',
-    requirements: [' '],
+    requirements: ['Двигун обертається з ривками. '],
     starterCode: ``,
     solution: ``,
     description: ``,

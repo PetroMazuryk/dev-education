@@ -13,6 +13,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
+    z-index: 9999;
 }
 
 .fullImage {
@@ -20,5 +22,9 @@
     max-height: 90vh;
     user-select: none;
     transition: transform 0.05s linear;
-    transform-origin: 0 0
+    transform-origin: 0 0;
+
+    will-change: transform;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
 }
