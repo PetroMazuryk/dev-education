@@ -11,6 +11,11 @@ export const Image = ({ src, alt }) => {
 
   const imgRef = useRef(null);
 
+  // 🔥 pinch refs
+  const lastDistance = useRef(0);
+  const lastCenter = useRef({ x: 0, y: 0 });
+
+  // ================= DRAG =================
   const handlePointerDown = (e) => {
     isDragging.current = true;
     start.current = {
@@ -32,13 +37,7 @@ export const Image = ({ src, alt }) => {
     isDragging.current = false;
   };
 
-  const close = () => {
-    setIsOpen(false);
-    setScale(1);
-    setPosition({ x: 0, y: 0 });
-  };
-
-  // 🔥 FIX WHEEL (замість handleWheel)
+  // ================= WHEEL ZOOM =================
   useEffect(() => {
     if (!isOpen) return;
 
@@ -62,6 +61,65 @@ export const Image = ({ src, alt }) => {
       el.removeEventListener('wheel', handler);
     };
   }, [scale, isOpen]);
+
+  // ================= PINCH ZOOM =================
+  const getDistance = (touches) => {
+    const [t1, t2] = touches;
+    return Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+  };
+
+  const getCenter = (touches) => {
+    const [t1, t2] = touches;
+    return {
+      x: (t1.clientX + t2.clientX) / 2,
+      y: (t1.clientY + t2.clientY) / 2,
+    };
+  };
+
+  const handleTouchStart = (e) => {
+    if (e.touches.length === 2) {
+      lastDistance.current = getDistance(e.touches);
+      lastCenter.current = getCenter(e.touches);
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+
+      const newDistance = getDistance(e.touches);
+      const newCenter = getCenter(e.touches);
+
+      const scaleChange = newDistance / lastDistance.current;
+
+      let newScale = scale * scaleChange;
+      newScale = Math.min(Math.max(1, newScale), 5);
+
+      const dx = newCenter.x - lastCenter.current.x;
+      const dy = newCenter.y - lastCenter.current.y;
+
+      setPosition((prev) => ({
+        x: newCenter.x - (newCenter.x - prev.x) * (newScale / scale) + dx,
+        y: newCenter.y - (newCenter.y - prev.y) * (newScale / scale) + dy,
+      }));
+
+      setScale(newScale);
+
+      lastDistance.current = newDistance;
+      lastCenter.current = newCenter;
+    }
+  };
+
+  const handleTouchEnd = () => {
+    lastDistance.current = 0;
+  };
+
+  // ================= CLOSE =================
+  const close = () => {
+    setIsOpen(false);
+    setScale(1);
+    setPosition({ x: 0, y: 0 });
+  };
 
   return (
     <>
@@ -88,6 +146,9 @@ export const Image = ({ src, alt }) => {
             onPointerMove={handlePointerMove}
             onPointerUp={stopDragging}
             onPointerLeave={stopDragging}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           />
         </div>
       )}
