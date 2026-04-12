@@ -16,11 +16,11 @@ export const screen = [
   {
     id: 2,
     title: 'Розрахунок струму двигуна',
-    images: [img('images/el_task_1.jpg')],
+    images: [img('images/el_task/task_1.jpg')],
   },
   {
     id: 3,
     title: 'Вибір перезізу кабелю.',
-    images: [img('images/el_task_2.jpg')],
+    images: [img('images/el_task/task_2.jpg')],
   },
 ];
