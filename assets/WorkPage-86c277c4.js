@@ -1,10 +1,10 @@
-import{j as e,r as d}from"./index-4e5b4463.js";import{L as c}from"./LessonBlock-0d938a83.js";const u="_wrapper_1jwtr_1",m="_label_1jwtr_18",p="_select_1jwtr_26",n={wrapper:u,label:m,select:p},S=({value:t,onChange:s,options:o})=>e.jsxs("div",{className:n.wrapper,children:[e.jsx("label",{className:n.label,children:"Оберіть підрозділ:"}),e.jsxs("select",{className:n.select,value:t,onChange:s,children:[e.jsx("option",{value:"",children:"Виберіть підрозділ:"}),o.map(i=>e.jsx("option",{value:i,children:i},i))]})]}),D=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{j as e,r as d}from"./index-128e971d.js";import{L as c}from"./LessonBlock-5e79aa73.js";const u="_wrapper_1jwtr_1",m="_label_1jwtr_18",p="_select_1jwtr_26",n={wrapper:u,label:m,select:p},S=({value:t,onChange:s,options:o})=>e.jsxs("div",{className:n.wrapper,children:[e.jsx("label",{className:n.label,children:"Оберіть підрозділ:"}),e.jsxs("select",{className:n.select,value:t,onChange:s,children:[e.jsx("option",{value:"",children:"Виберіть підрозділ:"}),o.map(i=>e.jsx("option",{value:i,children:i},i))]})]}),D=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
 1 кам – 4000 Lux
 4 кам - 6000 Lux
-`,solution:"",description:""},{id:2,title:" SA-24 Штативи (ROTA) ",requirements:[" "],starterCode:`1 мл , 2мл – 1200 шт
+`,solution:"",description:""},{id:2,title:" SA-24 Штативи (ROTA) ",requirements:[" "],starterCode:`1 мл , 2 мл – 1200 шт
 5 мл - 560 шт
 10 мл - 360 шт `,solution:"",description:""},{id:3,title:" SA-24 Штативи (CORIMA) ",requirements:[" "],starterCode:`1 мл , 2 мл –715 шт
 5 мл - 375 шт
