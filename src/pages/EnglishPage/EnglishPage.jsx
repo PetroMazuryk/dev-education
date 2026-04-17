@@ -21,7 +21,7 @@ const EnglishPage = () => {
 
   return (
     <main style={{ padding: '4px' }}>
-      <h2 className={styles.title}>Робочі записи</h2>
+      <h2 className={styles.title}>English language learning</h2>
 
       <DepartmentSelect
         value={selectedDept}
