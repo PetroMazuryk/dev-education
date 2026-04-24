@@ -1,3 +1,4 @@
+import { img } from '/src/utils/img';
 export const home_appliance = [
   {
     id: 1,
@@ -6,7 +7,7 @@ export const home_appliance = [
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: [''],
+    images: [img('images/home/home_1.jpg')],
   },
 
   {
