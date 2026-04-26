@@ -3,7 +3,10 @@ export const home_appliance = [
   {
     id: 1,
     title: 'Пральна машинка Electorlux EWT 10620 W',
-    requirements: ['Двигун обертається з ривками. '],
+    requirements: [
+      'Двигун обертається з ривками.',
+      'BTA 16 700 BW - симістор (triac) дозволяє керувати потужністю 220 В без реле. Струм: до ~16 А. Напруга: до ~700 В',
+    ],
     starterCode: ``,
     solution: ``,
     description: ``,
