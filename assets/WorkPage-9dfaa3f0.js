@@ -1,4 +1,4 @@
-import{r as a,j as t}from"./index-84fc9f3b.js";import{L as d}from"./LessonBlock-23d71768.js";import{i as e,D as m}from"./img-a15fdaf3.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{r as a,j as t}from"./index-f7342042.js";import{L as d}from"./LessonBlock-3b4920d5.js";import{i as e,D as m}from"./img-ec8a91a0.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
