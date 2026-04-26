@@ -31,7 +31,9 @@ const PasswordModal = ({ onSuccess }) => {
     }
   }, []);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     if (password === SITE_PASSWORD) {
       const expiresAt = Date.now() + ACCESS_DURATION;
       localStorage.setItem(ACCESS_KEY, expiresAt);
@@ -48,35 +50,39 @@ const PasswordModal = ({ onSuccess }) => {
       <div className={styles.modal}>
         <h2 className={styles.title}>Введіть пароль для доступу</h2>
 
-        <div className={styles.inputWrapper}>
-          <input
-            type={showPassword ? 'text' : 'password'}
-            placeholder="••••••••"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className={`${styles.input} ${error ? styles.inputError : ''}`}
-          />
+        <form onSubmit={handleSubmit}>
+          <div className={styles.inputWrapper}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className={`${styles.input} ${error ? styles.inputError : ''}`}
+            />
 
-          <button
-            type="button"
-            className={styles.eyeBtn}
-            onClick={() => setShowPassword((prev) => !prev)}
-          >
-            <svg width="20" height="20" stroke="currentColor" fill="none">
-              <use
-                href={`${sprite}#${showPassword ? 'icon-eye-off' : 'icon-eye'}`}
-              />
-            </svg>
+            <button
+              type="button"
+              className={styles.eyeBtn}
+              onClick={() => setShowPassword((prev) => !prev)}
+            >
+              <svg width="20" height="20" stroke="currentColor" fill="none">
+                <use
+                  href={`${sprite}#${
+                    showPassword ? 'icon-eye-off' : 'icon-eye'
+                  }`}
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className={styles.errorWrapper}>
+            {error && <p className={styles.error}>{error}</p>}
+          </div>
+
+          <button type="submit" className={styles.button}>
+            Підтвердити
           </button>
-        </div>
-
-        <div className={styles.errorWrapper}>
-          {error && <p className={styles.error}>{error}</p>}
-        </div>
-
-        <button className={styles.button} onClick={handleSubmit}>
-          Підтвердити
-        </button>
+        </form>
       </div>
     </div>,
     modalRoot
