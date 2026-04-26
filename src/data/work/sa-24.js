@@ -76,6 +76,19 @@ export const work = [
     description: ``,
   },
   {
+    id: 7,
+    title: 'Транслітерація - перегляд по точках.',
+    requirements: [
+      'початок - pochatok',
+      'середина - seredyna',
+      'кінець - kinets',
+      'сумнівні - sumnivni',
+    ],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
