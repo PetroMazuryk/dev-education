@@ -1,4 +1,4 @@
-import{r as a,j as t}from"./index-8b85ab04.js";import{L as d}from"./LessonBlock-8daebace.js";import{i as e,D as m}from"./img-65c7c628.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{r as a,j as t}from"./index-f50eb185.js";import{L as d}from"./LessonBlock-3f37e864.js";import{i as e,D as m}from"./img-f698174e.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
@@ -10,8 +10,9 @@ import{r as a,j as t}from"./index-8b85ab04.js";import{L as d}from"./LessonBlock-
 5 мл - 375 шт
 10 мл - 250  шт `,solution:"",description:""},{id:4,title:"SA-24. Test set 5 разів - на початку зміни та через 20 годин. ",requirements:[" "],starterCode:`Без пригарів  5 добрі / 9 погані,
 З пригарами 5 добрі / 11 погані,
-перевірка на колірність плюс 1 ам №15,
-Тест на рівень 10/20   - 1 раз`,solution:"",description:""},{id:5,title:"SA-24 Тест сет пригари",requirements:[" "],starterCode:`Аспаркам 5 мл,
+перевірка на колірність плюс 1 ам № 15,
+Тест на рівень 10/20   - 1 раз,
+Тест пригари  20/20  - 1 раз`,solution:"",description:""},{id:5,title:"SA-24 Тест сет пригари",requirements:[" "],starterCode:`Аспаркам 5 мл,
 Аспаркам 10 мл,
 Гентаміцину сульфат  40 мг/мл 2 мл,
 Джайв-мікрохім 200 мг/мл 2 мл,
