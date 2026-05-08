@@ -123,6 +123,19 @@ export const work = [
     description: ``,
   },
   {
+    id: 10,
+    title: 'Вирішення поломок на LT-24',
+    requirements: [
+      '1. Сильно бракує по 1 електроду - збільшуємо вібрацію до 95 %',
+      ' ',
+      ' ',
+      ' ',
+    ],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
