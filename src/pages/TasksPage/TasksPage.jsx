@@ -8,9 +8,11 @@ const TasksPage = () => {
     <main style={{ padding: '4px' }}>
       <h2 className={styles.title}>Задачі JS</h2>
 
-      {tasksJS.map((task) => (
-        <LessonBlock key={task.id} task={task} />
-      ))}
+      {tasksJS
+        .sort((a, b) => a.id - b.id)
+        .map((task) => (
+          <LessonBlock key={task.id} task={task} />
+        ))}
     </main>
   );
 };

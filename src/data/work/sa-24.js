@@ -136,6 +136,21 @@ export const work = [
     description: ``,
   },
   {
+    id: 11,
+    title: 'Переходи на SA-24',
+    requirements: [
+      'Перехід с/с — 25 хв ',
+      'Перехід ф/ф — 25 хв  ',
+      'Перехід п/п — 25 хв ',
+      ' ',
+      ' ',
+      ' ',
+    ],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
