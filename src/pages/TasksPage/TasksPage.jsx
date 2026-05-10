@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { LessonBlock } from '../../components/LessonBlock/LessonBlock';
 import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSelect';
 
-import { tasksJS } from '../../data/task/tasksJS';
+import { jsTasks } from '../../data/task/jsTasks';
 
 import styles from './TasksPage.module.css';
 
 const taskData = {
-  tasksJS: tasksJS,
+  jsTasks: jsTasks,
 };
 
 const TasksPage = () => {

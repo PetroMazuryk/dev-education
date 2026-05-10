@@ -1,4 +1,4 @@
-export const tasksJS = [
+export const jsTasks = [
   {
     id: 1,
     link: 'https://www.youtube.com/watch?v=OZPOO79Y4jk&t=4503s',
