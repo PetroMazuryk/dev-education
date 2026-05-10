@@ -1,5 +1,5 @@
 import { LessonBlock } from '../../components/LessonBlock/LessonBlock';
-import { tasksJS } from '../../data/tasksJS';
+import { tasksJS } from '../../data/task/tasksJS';
 
 import styles from './TasksPage.module.css';
 
