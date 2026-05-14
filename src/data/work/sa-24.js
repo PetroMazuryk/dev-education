@@ -15,6 +15,18 @@ export const work = [
   },
   {
     id: 2,
+    title: ' SA-24 Короба ',
+    requirements: [' '],
+    starterCode: `1 мл , 2 мл – 880 шт
+5 мл - 452 шт
+10 мл - 314 шт
+з 12.05.26 браки захуємо за к-стю в коробі,
+а не ротівськомго штативу`,
+    solution: ``,
+    description: ``,
+  },
+  {
+    id: 3,
     title: ' SA-24 Штативи (ROTA) ',
     requirements: [' '],
     starterCode: `1 мл , 2 мл – 1200 шт
@@ -24,7 +36,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 3,
+    id: 4,
     title: ' SA-24 Штативи (CORIMA) ',
     requirements: [' '],
     starterCode: `1 мл , 2 мл –715 шт
@@ -34,7 +46,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 4,
+    id: 5,
     title: 'SA-24. Test set 5 разів - на початку зміни та через 20 годин. ',
     requirements: [' '],
     starterCode: `Без пригарів  5 добрі / 9 погані,
@@ -46,7 +58,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 5,
+    id: 6,
     title: 'SA-24 Тест сет пригари',
     requirements: [' '],
     starterCode: `Аспаркам 5 мл,
@@ -64,7 +76,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 6,
+    id: 7,
     title: 'Не має вакуму на 6 зірці',
     requirements: [' '],
     starterCode: `Беремо ручнік та коли на клапані вакуму
@@ -77,7 +89,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 7,
+    id: 8,
     title: 'Транслітерація - перегляд по точках.',
     requirements: [
       'початок - pochatok',
@@ -90,7 +102,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 8,
+    id: 9,
     title: 'Препарати, які миємо хол. водою та сушимо холодним повітрям.',
     requirements: [
       'Де-спан 2 мл ',
@@ -106,7 +118,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 9,
+    id: 10,
     title: 'Вирішення поломок на SA-24',
     requirements: [
       '1. Якщо чорним фоном мигає 1 камера, ',
@@ -124,7 +136,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 10,
+    id: 11,
     title: 'Вирішення поломок на LT-24',
     requirements: [
       '(administrator//123456789)///(SKRUZHNOV/qwerty753) ',
@@ -139,7 +151,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 11,
+    id: 12,
     title: 'Переходи на SA-24',
     requirements: [
       'Перехід с/с — 25 хв ',
