@@ -1,4 +1,4 @@
-import{r as d,j as t}from"./index-497e32a0.js";import{D as a,L as m}from"./DepartmentSelect-8f4b981b.js";import{i as e}from"./img-75d4be4f.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{r as d,j as t}from"./index-05cfc19c.js";import{D as a,L as m}from"./DepartmentSelect-9bc68b07.js";import{i as e}from"./img-75d4be4f.js";const u=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
@@ -7,8 +7,8 @@ import{r as d,j as t}from"./index-497e32a0.js";import{D as a,L as m}from"./Depar
 `,solution:"",description:""},{id:2,title:" SA-24 Короба ",requirements:[" "],starterCode:`1 мл , 2 мл – 880 шт
 5 мл - 452 шт
 10 мл - 314 шт
-з 12.05.26 браки захуємо за к-стю в коробі,
-а не ротівськомго штативу`,solution:"",description:""},{id:3,title:" SA-24 Штативи (ROTA) ",requirements:[" "],starterCode:`1 мл , 2 мл – 1200 шт
+з 12.05.26 браки рахуємо за к-стю в коробі,
+а не ротівського штативу, перегляд 2 та сумнівні не враховуємо`,solution:"",description:""},{id:3,title:" SA-24 Штативи (ROTA) ",requirements:[" "],starterCode:`1 мл , 2 мл – 1200 шт
 5 мл - 560 шт
 10 мл - 360 шт `,solution:"",description:""},{id:4,title:" SA-24 Штативи (CORIMA) ",requirements:[" "],starterCode:`1 мл , 2 мл –715 шт
 5 мл - 375 шт
