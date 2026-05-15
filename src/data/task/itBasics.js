@@ -17,6 +17,15 @@ export const itBasics = [
     ],
   },
   {
+    id: 3,
+    title: 'AJAX (Asynchronus JavaScript and XL)',
+    requirements: [
+      'метод отримання або відправлення даних',
+      'з подальшим оновленням інтерфейсу за цими даними,',
+      'без потреби перезавантаження сторінки.',
+    ],
+  },
+  {
     id: 99,
     title: '',
     requirements: ['', '', ''],
