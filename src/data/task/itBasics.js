@@ -26,6 +26,15 @@ export const itBasics = [
     ],
   },
   {
+    id: 4,
+    title: 'CORS (Cross Origin Resource Sharing)',
+    requirements: [
+      '- де Origin це і є домен, порт або протокол',
+      '-  спільне використання ресурсів між спільними джерелами.',
+      '',
+    ],
+  },
+  {
     id: 99,
     title: '',
     requirements: ['', '', ''],
