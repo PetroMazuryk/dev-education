@@ -53,6 +53,15 @@ export const itBasics = [
     ],
   },
   {
+    id: 7,
+    title: 'REST (representational state trancfer)',
+    requirements: [
+      '— стиль бекенд-архітектури, грунтується на наборі принципів',
+      'які описують, яким чином визначаються і адресуються мереживі ресурси.',
+      '',
+    ],
+  },
+  {
     id: 99,
     title: '',
     requirements: ['', '', ''],
