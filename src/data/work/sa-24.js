@@ -1,3 +1,4 @@
+import { img } from '/src/utils/img';
 export const work = [
   {
     id: 1,
@@ -143,6 +144,13 @@ export const work = [
       'Коли не маркуємо - протокол маркування не заповнюємо ',
       ' ',
     ],
+  },
+  {
+    id: 13,
+    title: 'Параметри механічні та огляду по препаратах',
+    requirements: [''],
+
+    images: [img('images/sa_24/428_1.jpg'), img('images/sa_24/428_2.jpg')],
   },
   {
     id: 99,
