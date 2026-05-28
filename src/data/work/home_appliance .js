@@ -40,6 +40,13 @@ export const home_appliance = [
     images: [img('images/home/acrylic.jpg')],
   },
   {
+    id: 4,
+    title: 'Мій леокард',
+    requirements: [''],
+
+    images: [img('images/home/leocard.jpg')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
