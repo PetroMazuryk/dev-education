@@ -10,7 +10,6 @@ export const home_appliance = [
 
     images: [img('images/home/home_1.jpg')],
   },
-
   {
     id: 99,
     title: 'Авто фарбування',
@@ -26,10 +25,25 @@ export const home_appliance = [
       'ґрунт → P400–600 ',
       'перед фарбою → P800 ',
       ' ',
-      ' ',
-      ' ',
     ],
 
     images: [''],
+  },
+  {
+    id: 3,
+    title: 'Лак акриловий для стільниці',
+    requirements: [
+      'Водорозчинний. Краще малювати валиком ніж пензлем.',
+      'Використовував шпаклівку по дереву, її видно. Краще клей ПВА з стружкою.',
+    ],
+
+    images: [img('images/home/acrylic.jpg')],
+  },
+  {
+    id: 99,
+    title: '',
+    requirements: [''],
+
+    images: [img('images/home/')],
   },
 ];
