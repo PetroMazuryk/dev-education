@@ -155,6 +155,13 @@ export const work = [
     images: [img('images/sa_24/428_1.jpg'), img('images/sa_24/428_2.jpg')],
   },
   {
+    id: 14,
+    title: 'Параметри із заміною електроду LKT3 на  LT-24',
+    requirements: [''],
+
+    images: [img('images/sa_24/drugs_1.jpg')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
