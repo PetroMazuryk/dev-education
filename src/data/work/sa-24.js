@@ -177,6 +177,14 @@ export const work = [
     description: ``,
   },
   {
+    id: 15,
+    title: 'Висота запаювання ампул',
+    requirements: [' '],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
