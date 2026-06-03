@@ -47,6 +47,13 @@ export const home_appliance = [
     images: [img('images/home/leocard.jpg')],
   },
   {
+    id: 5,
+    title: 'Холодильник gorenje RK65365W',
+    requirements: [''],
+
+    images: [img('images/home/')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
