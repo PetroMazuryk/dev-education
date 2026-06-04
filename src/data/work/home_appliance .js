@@ -49,7 +49,10 @@ export const home_appliance = [
   {
     id: 5,
     title: 'Холодильник gorenje RK65365W',
-    requirements: [''],
+    requirements: [
+      'Підходить по кольору -Грунт білий Champion SPRAY professional ',
+      'FARBA PODKLADOWA ANTYKOROZYJNA: балончик 400 МЛ',
+    ],
 
     images: [img('images/home/')],
   },
