@@ -57,6 +57,13 @@ export const home_appliance = [
     images: [img('images/home/')],
   },
   {
+    id: 6,
+    title: 'Лак для паркету Sylac Sport P-880',
+    requirements: [''],
+
+    images: [img('images/home/sylac_1.jpg')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
