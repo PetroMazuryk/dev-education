@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { LessonBlock } from '../../components/LessonBlock/LessonBlock';
 import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSelect';
 
-import { work } from '../../data/work/sa-24';
+import { work_SA24 } from '../../data/work/sa-24';
 import { maint } from '../../data/work/maint';
 import { screen } from '../../data/work/screen';
 import { maintQuestions } from '../../data/work/maintQuestions';
@@ -12,7 +12,7 @@ import { home_appliance } from '../../data/work/home_appliance ';
 import styles from './WorkPage.module.css';
 
 const workData = {
-  work_SA24: work,
+  work_SA24: work_SA24,
   maint: maint,
   screen: screen,
   maintQuestions: maintQuestions,

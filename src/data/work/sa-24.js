@@ -1,5 +1,5 @@
 import { img } from '/src/utils/img';
-export const work = [
+export const work_SA24 = [
   {
     id: 1,
     title: 'SA-24 Світловий потік з чашками 2 кам / 3 кам: ',
@@ -179,7 +179,7 @@ export const work = [
     description: ``,
   },
   {
-    id: 15,
+    id: 16,
     title: 'Висота запаювання ампул',
     requirements: [' '],
     starterCode: ``,
