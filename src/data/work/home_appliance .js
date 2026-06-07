@@ -34,6 +34,7 @@ export const home_appliance = [
     title: 'Volkswagen Passat B6 06.12.2005 1.6/75кВт МРІ',
     starterCode: `Заміна моторної оливи 06.06.2026 — 219585 км
 Олива TITAN UNIMAX PLUS 10W40 5л -1302 грн.(квитанція 18.04.2026)
+Oil filter KAMOKA №F101601  — 200 грн.
 `,
     requirements: [
       '--- Обєм моторної оливи з фільтром: 4,5 л. ',
