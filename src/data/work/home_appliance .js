@@ -75,6 +75,19 @@ Oil filter KAMOKA №F101601  — 200 грн.
   },
   {
     id: 4,
+    link: 'https://www.youtube.com/watch?v=tyUAouonIc4&t=1555s',
+    title: 'Авто фарбування з переходом',
+    requirements: [
+      'Зачищаємо ржавчину болгаркою, потім 120 робимо плавний перехід',
+      'Епоксидкою тонким шаром обробляємо ржавчину',
+      'Через 10 хв наносимо шпаклівку скловолокно та через 10 хв універсалку',
+      'Наносимо проявку та 120 починаємо витирати ',
+      'Обезжирюємо, один тонкий шар епоксидного грунта, потім 2 шра наповнюючого грунта',
+      '',
+    ],
+  },
+  {
+    id: 5,
     title: 'Лак акриловий для стільниці',
     requirements: [
       'Водорозчинний. Краще малювати валиком ніж пензлем.',
@@ -84,14 +97,14 @@ Oil filter KAMOKA №F101601  — 200 грн.
     images: [img('images/home/acrylic.jpg')],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Мій леокард',
     requirements: [''],
 
     images: [img('images/home/leocard.jpg')],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Холодильник gorenje RK65365W',
     requirements: [
       'Підходить по кольору -Грунт білий Champion SPRAY professional ',
@@ -101,7 +114,7 @@ Oil filter KAMOKA №F101601  — 200 грн.
     images: [img('images/home/')],
   },
   {
-    id: 7,
+    id: 8,
     title: 'Лак для паркету Sylac Sport P-880',
     requirements: [''],
 
