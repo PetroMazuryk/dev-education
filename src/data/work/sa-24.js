@@ -182,7 +182,7 @@ export const work_SA24 = [
   {
     id: 16,
     title: 'Висота запаювання ампул',
-    requirements: ['1 мл: 46-49 мм '],
+    requirements: ['1 мл: 46-49 мм ', '2 мл: 66-69 мм'],
     starterCode: ``,
     solution: ``,
     description: ``,
