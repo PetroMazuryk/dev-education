@@ -1,0 +1,21 @@
+import { img } from '/src/utils/img';
+export const village = [
+  {
+    id: 1,
+    title: '',
+    requirements: [''],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+    images: [img('images/village/coloring_1.jpg')],
+  },
+
+  {
+    id: 99,
+    title: '',
+    requirements: [' '],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+];

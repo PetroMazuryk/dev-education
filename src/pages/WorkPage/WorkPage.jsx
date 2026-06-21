@@ -9,6 +9,7 @@ import { maintQuestions } from '../../data/work/maintQuestions';
 import { bosch_KLD_1042 } from '../../data/work/bosch-KLD-1042';
 import { home_appliance } from '../../data/work/home_appliance ';
 import { auto } from '../../data/work/auto';
+import { village } from '../../data/village/village';
 
 import styles from './WorkPage.module.css';
 
@@ -20,6 +21,7 @@ const workData = {
   bosch_KLD_1042: bosch_KLD_1042,
   home_appliance: home_appliance,
   auto: auto,
+  village: village,
 };
 
 const WorkPage = () => {
