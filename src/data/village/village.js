@@ -7,7 +7,10 @@ export const village = [
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: [img('images/village/coloring_1.jpg')],
+    images: [
+      img('images/village/coloring_1.jpg'),
+      img('images/village/coloring_2.jpg'),
+    ],
   },
 
   {
