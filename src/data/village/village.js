@@ -11,6 +11,7 @@ export const village = [
       img('images/village/coloring_1.jpg'),
       img('images/village/coloring_2.jpg'),
       img('images/village/coloring_3.jpg'),
+      img('images/village/paint_1.jpg'),
     ],
   },
 
