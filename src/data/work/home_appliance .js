@@ -8,7 +8,10 @@ export const home_appliance = [
       'BTA 16 700 BW - симістор (triac) дозволяє керувати потужністю 220 В без реле. Струм: до ~16 А. Напруга: до ~700 В',
       'Пресостат 4 4906 06:41 T12',
     ],
-    images: [img('images/home/pressure_1.jpg')],
+    images: [
+      img('images/home/pressure_1.jpg'),
+      img('images/home/pressure_2.jpg'),
+    ],
   },
 
   {
