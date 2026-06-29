@@ -2,12 +2,12 @@ import { img } from '/src/utils/img';
 export const bicycle = [
   {
     id: 1,
-    title: 'Барвники село',
+    title: 'Велосипед Sky Land ',
     requirements: [''],
     starterCode: ``,
     solution: ``,
     description: ``,
-    images: [img('images/')],
+    images: [img('images/bicycle/brake_1.jpg')],
   },
 
   {
