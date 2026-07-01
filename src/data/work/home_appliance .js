@@ -49,6 +49,13 @@ export const home_appliance = [
     images: [img('images/home/sylac_1.jpg'), img('images/home/sylac_2.jpg')],
   },
   {
+    id: 6,
+    title: 'Морозильна камера Blomberg',
+    requirements: [''],
+
+    images: [img('images/home/blomberg_1.jpg')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
