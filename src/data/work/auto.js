@@ -63,6 +63,7 @@ Oil filter KAMOKA №F101601  — 200 грн.
     images: [
       img('images/home/filter_1.jpg'),
       img('images/auto/degreaser_1.jpg'),
+      img('images/auto/polishing_1.jpg'),
     ],
   },
   {
