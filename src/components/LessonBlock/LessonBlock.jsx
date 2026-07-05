@@ -9,6 +9,7 @@ export const LessonBlock = ({ task }) => {
     id,
     title,
     link,
+    links,
     requirements,
     description,
     inlineCode,
@@ -31,6 +32,21 @@ export const LessonBlock = ({ task }) => {
           >
             ▶ Відео YouTube
           </a>
+        )}
+        {links?.length > 0 && (
+          <div className={styles.links}>
+            {links.map(({ sources, url }, index) => (
+              <a
+                key={index}
+                href={url}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.link}
+              >
+                {sources}
+              </a>
+            ))}
+          </div>
         )}
       </h3>
 
