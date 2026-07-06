@@ -86,29 +86,24 @@ Oil filter KAMOKA №F101601  — 200 грн.
   {
     id: 4,
     title: 'Автострахування - 03.07.2026 — 4109,7 грн',
-    requirements: ['Страхував через Oneclick — посилання на поліс 1'],
-    link: 'https://api.parasol.ua/uploads/ewa-files/2977219EPSz9uU1c.pdf',
-  },
-  {
-    id: 5,
-    title: 'Автострахування - 03.07.2026 — 4109,7 грн',
     requirements: [
-      'Страхував через Oneclick посилання на поліс 2',
+      'Страхував через Oneclick ',
       'Електронний поліс № 240217370',
       'Зареєстровано в єдиній централізованій базі даних 03.07.2026 11:17',
     ],
-    link: 'https://policy.mtsbu.ua/qr/policyinfo/ua?md=B69775A1B2DF06C8F3EA5FCFA04DA81B4C9F7707FF7AAD83C76018D28425FE1B',
+
     links: [
       {
         sources: '🌐 Електронний поліс',
-        url: 'https://youtu.be/123',
+        url: 'https://api.parasol.ua/uploads/ewa-files/2977219EPSz9uU1c.pdf',
       },
       {
         sources: '📚 МТСБУ',
-        url: 'https://youtu.be/456',
+        url: 'https://policy.mtsbu.ua/qr/policyinfo/ua?md=B69775A1B2DF06C8F3EA5FCFA04DA81B4C9F7707FF7AAD83C76018D28425FE1B',
       },
     ],
   },
+
   {
     id: 99,
     title: '',
