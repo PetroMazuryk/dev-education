@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Header } from 'components/Header/Header';
 import { MobileMenu } from 'components/MobileMenu/MobileMenu';
 import PasswordModal from 'components/PasswordModal/PasswordModal';
+import { Loader } from 'components/Loader/Loader';
 
 import styles from './SharedLayout.module.css';
 
@@ -28,10 +29,9 @@ const SharedLayout = () => {
 
       <MobileMenu isOpen={isMenuOpen} onClose={closeMenu} />
 
+      {!isAuthorized && <PasswordModal onSuccess={handleSuccessAuth} />}
       <div className={styles.container}>
-        {!isAuthorized && <PasswordModal onSuccess={handleSuccessAuth} />}
-
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loader />}>
           <Outlet />
         </Suspense>
       </div>
