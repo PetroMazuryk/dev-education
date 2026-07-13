@@ -56,6 +56,13 @@ export const home_appliance = [
     images: [img('images/home/blomberg_1.jpg')],
   },
   {
+    id: 7,
+    title: 'Фарба для радіатора',
+    requirements: [''],
+
+    images: [img('images/home/paint_1.jpg')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
