@@ -75,6 +75,18 @@ export const home_appliance = [
     ],
   },
   {
+    id: 9,
+    title: 'Побілка коридору 06.07.2026 ',
+    requirements: [
+      'Фарба Farbex Interior',
+      'Барвник: Dufa D230 126 Petrol',
+      'Вистачило 3 літра. Валик краще не замочувати водою.',
+      '',
+    ],
+
+    images: [img('images/home/')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
