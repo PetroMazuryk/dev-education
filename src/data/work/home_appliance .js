@@ -81,6 +81,7 @@ export const home_appliance = [
       'Фарба Farbex Interior',
       'Барвник: Dufa D230 126 Petrol',
       'Вистачило 3 літра. Валик краще не замочувати водою.',
+      'Шпаклівка фінішна акрилова у відрі Anserglob',
       '',
     ],
 
