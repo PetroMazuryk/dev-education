@@ -84,7 +84,7 @@ export const home_appliance = [
       'Шпаклівка фінішна акрилова у відрі Anserglob',
       '',
     ],
-    images: [img('images/home/farbex.png'), img('images/home/')],
+    images: [img('images/home/farbex.png'), img('images/home/anserglob.png')],
   },
   {
     id: 99,
