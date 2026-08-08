@@ -79,12 +79,16 @@ export const home_appliance = [
     title: 'Побілка коридору 06.07.2026 ',
     requirements: [
       'Фарба Farbex Interior',
-      'Барвник: Dufa D230 126 Petrol',
-      'Вистачило 3 літра. Валик краще не замочувати водою.',
+      'Барвник: Dufa D230 126 Petrol — 250 грн вул. Повітряна 1',
+      'Вистачило 3 літра фарби. Валик краще не замочувати водою.',
       'Шпаклівка фінішна акрилова у відрі Anserglob',
       '',
     ],
-    images: [img('images/home/farbex.png'), img('images/home/anserglob.png')],
+    images: [
+      img('images/home/farbex.png'),
+      img('images/home/anserglob.png'),
+      img('images/home/dufa.png'),
+    ],
   },
   {
     id: 99,
