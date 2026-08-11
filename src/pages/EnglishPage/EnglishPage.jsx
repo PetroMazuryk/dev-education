@@ -3,11 +3,13 @@ import { LessonBlock } from '../../components/LessonBlock/LessonBlock';
 import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSelect';
 
 import { interview } from '../../data/english/interview';
+import { greeting } from '../../data/english/greeting';
 
 import styles from './EnglishPage.module.css';
 
 const englishData = {
   interview: interview,
+  greeting: greeting,
 };
 
 const EnglishPage = () => {
