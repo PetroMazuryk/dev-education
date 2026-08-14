@@ -88,6 +88,7 @@ export const home_appliance = [
       img('images/home/farbex.png'),
       img('images/home/anserglob.png'),
       img('images/home/dufa.png'),
+      img('images/home/color.png'),
     ],
   },
   {
