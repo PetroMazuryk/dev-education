@@ -4,12 +4,14 @@ import { DepartmentSelect } from '../../components/DepartmentSelect/DepartmentSe
 
 import { interview } from '../../data/english/interview';
 import { greeting } from '../../data/english/greeting';
+import { songs } from '../../data/english/songs';
 
 import styles from './EnglishPage.module.css';
 
 const englishData = {
   interview: interview,
   greeting: greeting,
+  songs: songs,
 };
 
 const EnglishPage = () => {
