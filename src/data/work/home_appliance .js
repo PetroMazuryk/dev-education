@@ -58,9 +58,11 @@ export const home_appliance = [
   {
     id: 7,
     title: 'Фарба для радіатора',
-    requirements: [''],
+    requirements: [
+      'Фарбу rolax вилив у пласмасове відро від panafarb - 17.08.26',
+    ],
 
-    images: [img('images/home/paint_1.jpg')],
+    images: [img('images/home/paint_1.jpg'), img('images/home/rolax_1.png')],
   },
   {
     id: 8,
