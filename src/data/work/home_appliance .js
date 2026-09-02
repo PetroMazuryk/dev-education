@@ -95,6 +95,18 @@ export const home_appliance = [
     ],
   },
   {
+    id: 10,
+    title: 'Батарея до ДБЖ',
+    requirements: [
+      'Батарея до ДБЖ Merlion 12V-7Ah поміняв 02.09.2026',
+      'Куплена в магазині Brain, вул. Костюшка, 24, - 498 грн + 60 балів. ',
+      'До цього часу стояла Elite Lux 12v 6FM-7.2. -прослужила два роки.',
+      'Куплена Elite Lux за 500грн на радіобазарі в Олега 03.04.2025',
+    ],
+
+    images: [img('images/home/merlion.png')],
+  },
+  {
     id: 99,
     title: '',
     requirements: [''],
