@@ -3,6 +3,7 @@ export const songs = [
   {
     id: 1,
     title: 'Розпитаю про любов',
+    link: 'https://www.youtube.com/watch?v=BmAv2CpxXvE',
     requirements: [
       'Що за біда! – яра вода хвилю жене.',
       'Ти – молода, як вода яра!',
