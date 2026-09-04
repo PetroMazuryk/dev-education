@@ -103,7 +103,26 @@ Oil filter KAMOKA №F101601  — 200 грн.
       },
     ],
   },
+  {
+    id: 5,
+    title: 'Які марки авто можна брати після 300+',
+    requirements: [
+      '1 - Toyota Camry 40, 50, 70, Rav4  2.5',
+      '2 - Toyota Camry 40, 50, 70, Rav4  2.5 гібрид',
+      '',
+      '',
+      '',
+    ],
 
+    images: [img('images/home/')],
+  },
+  {
+    id: 6,
+    title: '06A133567A VAG кронштейн повітряного насоса',
+    requirements: [''],
+
+    images: [img('images/home/')],
+  },
   {
     id: 99,
     title: '06A133567A VAG кронштейн повітряного насоса',
