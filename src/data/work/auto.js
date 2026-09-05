@@ -120,12 +120,19 @@ Oil filter KAMOKA №F101601  — 200 грн.
     id: 6,
     title: '06A133567A VAG кронштейн повітряного насоса',
     requirements: [''],
+  },
+  {
+    id: 7,
+    title: 'Hoco E75 — це автомобільний FM-модулятор/трансмітер',
+    requirements: [
+      'Він вставляється в прикурювач і передає звук із телефона на автомагнітолу через FM-частоту.',
+    ],
 
-    images: [img('images/home/')],
+    images: [img('images/auto/hoco.png')],
   },
   {
     id: 99,
-    title: '06A133567A VAG кронштейн повітряного насоса',
+    title: 'Назва',
     requirements: [''],
 
     images: [img('images/home/')],
