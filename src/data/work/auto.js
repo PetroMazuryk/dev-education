@@ -120,6 +120,7 @@ Oil filter KAMOKA №F101601  — 200 грн.
     id: 6,
     title: '06A133567A VAG кронштейн повітряного насоса',
     requirements: [''],
+    images: [img('images/auto/air_pump.jpg')],
   },
   {
     id: 7,
@@ -127,7 +128,6 @@ Oil filter KAMOKA №F101601  — 200 грн.
     requirements: [
       'Він вставляється в прикурювач і передає звук із телефона на автомагнітолу через FM-частоту.',
     ],
-
     images: [img('images/auto/hoco.png')],
   },
   {
