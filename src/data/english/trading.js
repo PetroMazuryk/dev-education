@@ -1,3 +1,4 @@
+import { img } from '/src/utils/img';
 export const trading = [
   {
     id: 1,
@@ -40,6 +41,29 @@ export const trading = [
     starterCode: ``,
     solution: ``,
     description: ``,
+  },
+  {
+    id: 50,
+    links: [
+      {
+        sources: '🌐 Scalping',
+        url: 'https://www.youtube.com/watch?v=DUe0Iy_DLS0',
+      },
+    ],
+    title: 'Скальпінг — Влад Дудучканов',
+    requirements: [
+      'Переваги скальпінгу - швидке відпрацювання, багато можливостей.',
+      'Недоліку скальпінгу - великі комісії (0,5-1 % від депозиту), постійна напруженість.',
+      'Завжди враховувати час - кілл зони Нюйорка та закриття Лондону (це оптимальні проміжки для торгівлі)',
+      '',
+      '',
+      '',
+    ],
+
+    images: [
+      img('images/trading/trading_1.png'),
+      img('images/trading/trading_2.png'),
+    ],
   },
   {
     id: 99,
