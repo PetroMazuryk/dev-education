@@ -28,7 +28,7 @@ export const greeting = [
   },
   {
     id: 3,
-    title: 'Congratulations on your wedding',
+    title: 'Congratulations on your wedding 21.08.2026 ',
     requirements: [
       ' Дорогі мої діти!',
       'Сьогодні я дивлюся на вас і думаю: два з половиною роки тому ви стали чоловіком і дружиною',
