@@ -49,6 +49,10 @@ export const trading = [
         sources: '🌐 Scalping',
         url: 'https://www.youtube.com/watch?v=DUe0Iy_DLS0',
       },
+      {
+        sources: '🌐 Scalping-2',
+        url: 'https://www.youtube.com/watch?v=e3By4CnvwJU',
+      },
     ],
     title: 'Скальпінг — Влад Дудучканов',
     requirements: [
