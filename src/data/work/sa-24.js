@@ -196,6 +196,14 @@ export const work_SA24 = [
     description: ``,
   },
   {
+    id: 17,
+    title: 'Test set - набір еталонних ампул з номерами',
+    requirements: [' '],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: [' '],
