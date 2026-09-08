@@ -198,7 +198,7 @@ export const work_SA24 = [
   {
     id: 17,
     title: 'Test set - набір еталонних ампул з номерами',
-    requirements: [' '],
+    requirements: ['Перші пять ампул добрі'],
     starterCode: ``,
     solution: ``,
     description: ``,
