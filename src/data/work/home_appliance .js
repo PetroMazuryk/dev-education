@@ -96,7 +96,7 @@ export const home_appliance = [
   },
   {
     id: 10,
-    title: 'Батарея до ДБЖ',
+    title: 'Батарея до ДБЖ Mustek PowerMust 600 LCD ',
     requirements: [
       'Батарея до ДБЖ Merlion 12V-7Ah поміняв 02.09.2026',
       'Куплена в магазині Brain, вул. Костюшка, 24, - 498 грн + 60 балів. ',
@@ -104,7 +104,7 @@ export const home_appliance = [
       'Куплена Elite Lux за 500грн на радіобазарі в Олега 03.04.2025',
     ],
 
-    images: [img('images/home/merlion.png')],
+    images: [img('images/home/merlion.png'), img('images/home/mustek.png')],
   },
   {
     id: 99,
