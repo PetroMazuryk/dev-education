@@ -198,7 +198,10 @@ export const work_SA24 = [
   {
     id: 17,
     title: 'Test set - набір еталонних ампул з номерами',
-    requirements: ['- Перші пять ампул добрі', '- 6 та 7 - косметика'],
+    requirements: [
+      '- №1 - №5 Перші пять ампул добрі — 5 шт',
+      '- №6 та №7 - косметика — 2 шт',
+    ],
     starterCode: ``,
     solution: ``,
     description: ``,
