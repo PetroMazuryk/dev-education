@@ -50,7 +50,7 @@ export const home_appliance = [
   },
   {
     id: 6,
-    title: 'Морозильна камера Blomberg  FNT9672 A+.',
+    title: 'Морозильна камера Blomberg FNT 9672 A+ (7244442517).',
     requirements: [
       'Куплена 12.02.2019 — 7000 грн.',
       'Куплена в Юри на Торпедо. 096 041 6960',
@@ -58,6 +58,8 @@ export const home_appliance = [
       'Компресор TEE NTU 150MT U233-00,',
       'Газ хладаген Ізобутан - R600a',
       'Обєм 265 літрів',
+      'Пускове реде Klixon 189NFBYY-73 APV2AB',
+      'Конденсатор пусковий CBB65A-2 4mF 400V-10000h/CL.B',
     ],
 
     images: [img('images/home/blomberg_1.jpg')],
