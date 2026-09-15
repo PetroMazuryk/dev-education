@@ -56,6 +56,10 @@ export const home_appliance = [
         sources: '❄️ Frostland',
         url: 'https://frostland.com.ua/uk/product/kompresor-secop-danfoss-hmk95aa/',
       },
+      {
+        sources: '⚙️ TexnoLviv',
+        url: 'https://tehnolviv.com.ua/',
+      },
     ],
     requirements: [
       'Камера Blomberg (це преміум-суббренд концерну Beko)',
