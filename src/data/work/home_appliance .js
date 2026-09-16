@@ -39,7 +39,7 @@ export const home_appliance = [
       'FARBA PODKLADOWA ANTYKOROZYJNA: балончик 400 МЛ',
     ],
 
-    images: [img('images/home/')],
+    images: [img('images/home/danfoss_1.jpg')],
   },
   {
     id: 5,
