@@ -145,6 +145,13 @@ Oil filter KAMOKA №F101601  — 200 грн.
     images: [img('images/auto/hoco.png')],
   },
   {
+    id: 8,
+    title: 'Авто полірування',
+    requirements: [''],
+
+    images: [img('images/home/')],
+  },
+  {
     id: 99,
     title: 'Назва',
     requirements: [''],
