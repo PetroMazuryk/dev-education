@@ -88,6 +88,7 @@ export const home_appliance = [
       img('images/home/blomberg_1.jpg'),
       img('images/home/blomberg_2.png'),
       img('images/home/compressor.jpg'),
+      img('images/home/capacitor.jpg'),
     ],
   },
   {
