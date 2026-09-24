@@ -101,6 +101,7 @@ export const home_appliance = [
       img('images/home/blomberg_2.png'),
       img('images/home/compressor.jpg'),
       img('images/home/capacitor.jpg'),
+      img('images/home/klixon_1.jpg'),
     ],
   },
   {
