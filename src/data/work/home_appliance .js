@@ -112,8 +112,12 @@ export const home_appliance = [
         sources: '❄️ Заправка R600a',
         url: 'https://www.youtube.com/watch?v=yPlBEAWLzuo',
       },
+      {
+        sources: '⚙️ Розклинювання',
+        url: 'https://www.youtube.com/watch?v=h3SMo58j9ok',
+      },
     ],
-    requirements: [''],
+    requirements: ['Розклинювання компресора 2 діоди 10А 400V'],
 
     images: [img('images/home/')],
   },
