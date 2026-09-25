@@ -106,6 +106,19 @@ export const home_appliance = [
   },
   {
     id: 7,
+    title: 'Заправка фреоном R600a (ізобутан)',
+    links: [
+      {
+        sources: '❄️ Заправка R600a',
+        url: 'https://www.youtube.com/watch?v=yPlBEAWLzuo',
+      },
+    ],
+    requirements: [''],
+
+    images: [img('images/home/')],
+  },
+  {
+    id: 8,
     title: 'Фарба для радіатора',
     requirements: [
       'Фарбу rolax вилив у пласмасове відро від panafarb - 17.08.26',
@@ -115,7 +128,7 @@ export const home_appliance = [
     images: [img('images/home/paint_1.jpg'), img('images/home/rolax_1.png')],
   },
   {
-    id: 8,
+    id: 9,
     title: 'Травяні збори',
     requirements: [
       'Збір кишково-шлунковий:',
@@ -127,7 +140,7 @@ export const home_appliance = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: 'Побілка коридору 06.07.2026 ',
     requirements: [
       'Фарба Farbex Interior',
@@ -144,7 +157,7 @@ export const home_appliance = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: 'Батарея до ДБЖ Mustek PowerMust 600 LCD ',
     requirements: [
       'Батарея до ДБЖ Merlion 12V-7Ah поміняв 02.09.2026',
