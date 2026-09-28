@@ -2,6 +2,25 @@ import { img } from '/src/utils/img';
 export const home_appliance = [
   {
     id: 1,
+    title: 'Мій леокард',
+    requirements: [''],
+
+    images: [img('images/home/leocard.jpg')],
+  },
+  {
+    id: 2,
+    title: 'Батарея до ДБЖ Mustek PowerMust 600 LCD ',
+    requirements: [
+      'Батарея до ДБЖ Merlion 12V-7Ah поміняв 02.09.2026',
+      'Куплена в магазині Brain, вул. Костюшка, 24, - 498 грн + 60 балів. ',
+      'До цього часу стояла Elite Lux 12v 6FM-7.2. - прослужила 1 рік і 5 місяців.',
+      'Куплена Elite Lux за 500грн на радіобазарі в Олега 03.04.2025',
+    ],
+
+    images: [img('images/home/merlion.png'), img('images/home/mustek.png')],
+  },
+  {
+    id: 3,
     title: 'Пральна машинка Electorlux EWT 10620 W',
     requirements: [
       'Двигун обертається з ривками.',
@@ -14,23 +33,6 @@ export const home_appliance = [
     ],
   },
 
-  {
-    id: 2,
-    title: 'Лак акриловий для стільниці',
-    requirements: [
-      'Водорозчинний. Краще малювати валиком ніж пензлем.',
-      'Використовував шпаклівку по дереву, її видно. Краще клей ПВА з стружкою.',
-    ],
-
-    images: [img('images/home/acrylic.jpg')],
-  },
-  {
-    id: 3,
-    title: 'Мій леокард',
-    requirements: [''],
-
-    images: [img('images/home/leocard.jpg')],
-  },
   {
     id: 4,
     title: 'Холодильник gorenje RK65365W',
@@ -47,15 +49,9 @@ export const home_appliance = [
 
     images: [img('images/home/gorenje.png'), img('images/home/danfoss_1.jpg')],
   },
+
   {
     id: 5,
-    title: 'Лак для паркету Sylac Sport P-880',
-    requirements: [''],
-
-    images: [img('images/home/sylac_1.jpg'), img('images/home/sylac_2.jpg')],
-  },
-  {
-    id: 6,
     title: 'Морозильна камера Blomberg FNT 9672 A+ (7244442517).',
     links: [
       {
@@ -112,7 +108,7 @@ export const home_appliance = [
     ],
   },
   {
-    id: 7,
+    id: 6,
     title: 'Заправка фреоном R600a (ізобутан)',
     links: [
       {
@@ -129,7 +125,7 @@ export const home_appliance = [
     images: [img('images/home/')],
   },
   {
-    id: 8,
+    id: 7,
     title: 'Фарба для радіатора',
     requirements: [
       'Фарбу rolax вилив у пласмасове відро від panafarb - 17.08.26',
@@ -139,7 +135,7 @@ export const home_appliance = [
     images: [img('images/home/paint_1.jpg'), img('images/home/rolax_1.png')],
   },
   {
-    id: 9,
+    id: 8,
     title: 'Травяні збори',
     requirements: [
       'Збір кишково-шлунковий:',
@@ -151,7 +147,7 @@ export const home_appliance = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     title: 'Побілка коридору 06.07.2026 ',
     requirements: [
       'Фарба Farbex Interior',
@@ -168,17 +164,23 @@ export const home_appliance = [
     ],
   },
   {
-    id: 11,
-    title: 'Батарея до ДБЖ Mustek PowerMust 600 LCD ',
+    id: 10,
+    title: 'Лак акриловий для стільниці',
     requirements: [
-      'Батарея до ДБЖ Merlion 12V-7Ah поміняв 02.09.2026',
-      'Куплена в магазині Brain, вул. Костюшка, 24, - 498 грн + 60 балів. ',
-      'До цього часу стояла Elite Lux 12v 6FM-7.2. - прослужила 1 рік і 5 місяців.',
-      'Куплена Elite Lux за 500грн на радіобазарі в Олега 03.04.2025',
+      'Водорозчинний. Краще малювати валиком ніж пензлем.',
+      'Використовував шпаклівку по дереву, її видно. Краще клей ПВА з стружкою.',
     ],
 
-    images: [img('images/home/merlion.png'), img('images/home/mustek.png')],
+    images: [img('images/home/acrylic.jpg')],
   },
+  {
+    id: 11,
+    title: 'Лак для паркету Sylac Sport P-880',
+    requirements: [''],
+
+    images: [img('images/home/sylac_1.jpg'), img('images/home/sylac_2.jpg')],
+  },
+
   {
     id: 99,
     title: '',
