@@ -17,7 +17,11 @@ export const home_appliance = [
       'Куплена Elite Lux за 500грн на радіобазарі в Олега 03.04.2025',
     ],
 
-    images: [img('images/home/merlion.png'), img('images/home/mustek.png')],
+    images: [
+      img('images/home/merlion.png'),
+      img('images/home/mustek.png'),
+      img('images/home/mustek_1.jpg'),
+    ],
   },
   {
     id: 3,
