@@ -18,7 +18,7 @@ export const home_appliance = [
       'Під час пайки не відєднав акумулятор - згорів процесор 618-04110-01',
       'Замалий опір на 3 ніжці справа від ключа',
       'Була випалена доріжка біля  D05 1N4148',
-      'Номер плати 098-17514-00-S2'
+      'Номер плати 098-17514-00-S2',
     ],
 
     images: [
@@ -190,6 +190,13 @@ export const home_appliance = [
     requirements: [''],
 
     images: [img('images/home/sylac_1.jpg'), img('images/home/sylac_2.jpg')],
+  },
+  {
+    id: 11,
+    title: 'ДБЖ APC 750 Back-UPS',
+    requirements: [''],
+
+    images: [img('images/home/upc_apc.png')],
   },
 
   {
