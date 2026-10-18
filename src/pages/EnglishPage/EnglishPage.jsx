@@ -6,6 +6,7 @@ import { interview } from '../../data/english/interview';
 import { greeting } from '../../data/english/greeting';
 import { songs } from '../../data/english/songs';
 import { trading } from '../../data/english/trading';
+import { fpv } from '../../data/english/fpv';
 
 import styles from './EnglishPage.module.css';
 
@@ -14,6 +15,7 @@ const englishData = {
   greeting: greeting,
   songs: songs,
   trading: trading,
+  fpv: fpv,
 };
 
 const EnglishPage = () => {
