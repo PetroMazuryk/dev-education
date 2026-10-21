@@ -103,6 +103,7 @@ Oil filter KAMOKA №F101601  — 200 грн.
         url: 'https://policy.mtsbu.ua/qr/policyinfo/ua?md=B69775A1B2DF06C8F3EA5FCFA04DA81B4C9F7707FF7AAD83C76018D28425FE1B',
       },
     ],
+    images: [img('images/auto/car_insurance.png')],
   },
   {
     id: 5,
