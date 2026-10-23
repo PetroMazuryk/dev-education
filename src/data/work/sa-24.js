@@ -83,6 +83,7 @@ export const work_SA24 = [
       'середина - seredyna',
       'кінець - kinets',
       'сумнівні - sumnivni',
+      'основа - osnova',
       'продовження - prodovzhennia',
     ],
   },
