@@ -239,6 +239,14 @@ export const work_SA24 = [
     ],
   },
   {
+    id: 19,
+    title: 'Протокол обліку етикеток',
+    requirements: ['', '', '', ''],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: ['', '', '', ''],
