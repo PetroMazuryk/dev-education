@@ -252,6 +252,14 @@ export const work_SA24 = [
     description: ``,
   },
   {
+    id: 20,
+    title: 'Коди простоїв на SA-24',
+    requirements: ['', '', '', ''],
+    starterCode: ``,
+    solution: ``,
+    description: ``,
+  },
+  {
     id: 99,
     title: '',
     requirements: ['', '', '', ''],
