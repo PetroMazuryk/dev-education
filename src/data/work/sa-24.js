@@ -254,7 +254,7 @@ export const work_SA24 = [
   {
     id: 20,
     title: 'Коди простоїв на SA-24',
-    requirements: ['', '', '', ''],
+    requirements: ['4.3 Вибирання брудних ампул з транспортера', '', '', ''],
     starterCode: ``,
     solution: ``,
     description: ``,
