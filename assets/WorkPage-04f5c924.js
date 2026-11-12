@@ -1,4 +1,4 @@
-import{i as e,r as m,j as t}from"./index-af9a48bd.js";import{D as l,L as u}from"./DepartmentSelect-d40683e9.js";const d=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{i as e,r as m,j as t}from"./index-90719d51.js";import{D as l,L as u}from"./DepartmentSelect-82e0a5fb.js";const d=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
@@ -19,10 +19,10 @@ import{i as e,r as m,j as t}from"./index-af9a48bd.js";import{D as l,L as u}from"
 Тест пригари  20/20  - 1 раз`},{id:6,title:"SA-24 Тест сет пригари",requirements:[" "],starterCode:`Аспаркам 5 мл,
 Аспаркам 10 мл,
 Гентаміцину сульфат  40 мг/мл 2 мл,
-Джайв-мікрохім 200 мг/мл 2 мл,
+Джайв-мікрохім 200 мг/мл 2 мл ?,
 Нейроксон 500 мг/4мл 4 мл,
 Нейроксон 1000 мг/4мл 4 мл,
-Ренейро-мікрохім 250 мг/мл 4 мл,
+Ренейро-мікрохім 250 мг/мл 4 мл, 5/11
 Рибоксин 200 мг/мл 5 мл,
 Рибоксин 200 мг/мл 10 мл,
 Тіколін 250 мг/мл 4 мл,
