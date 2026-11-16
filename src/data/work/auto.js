@@ -19,8 +19,10 @@ export const auto = [
   },
   {
     id: 2,
-    title: 'Volkswagen Passat B6 06.12.2005 1.6/75кВт МРІ',
-    starterCode: `Старт 218255 км - 19.07.2025
+    title: 'Volkswagen Passat Variant B6 06.12.2005 1.6 / 75кВт МРІ',
+    starterCode: `Код двигун: BSE
+Ідент. продавця: 3C50A1
+Старт 218255 км - 19.07.2025
 Заміна моторної оливи 06.06.2026 — 219585 км
 Олива TITAN UNIMAX PLUS 10W40 5л -1302 грн.(квитанція 18.04.2026)
 Oil filter KAMOKA №F101601  — 200 грн.
