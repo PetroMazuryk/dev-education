@@ -142,30 +142,17 @@ export const home_appliance = [
 
     images: [img('images/home/')],
   },
+
   {
     id: 7,
-    title: 'Фарба для радіатора',
-    requirements: [
-      'Фарбу rolax вилив у пласмасове відро від panafarb - 17.08.26',
-      'Фарбували двері та вікно у великій кімнаті - 17.08.26',
-    ],
+    title: 'ДБЖ APC 750 Back-UPS',
+    requirements: [''],
 
-    images: [img('images/home/paint_1.jpg'), img('images/home/rolax_1.png')],
+    images: [img('images/home/upc_apc.png')],
   },
+
   {
-    id: 8,
-    title: 'Травяні збори',
-    requirements: [
-      'Збір кишково-шлунковий:',
-      'ромашка лікарська, парило, звіробій,',
-      'перстач гусячий, деревій тисячолистий, мята перцева,',
-      'спориш, подорожник великий, шавлія, золототисячник (центурія)',
-      'листя берези, материнка, нагідки (календула), іван-чай, суниці лісові.',
-      '-------------------------------------------------',
-    ],
-  },
-  {
-    id: 9,
+    id: 20,
     title: 'Побілка коридору 06.07.2026 ',
     requirements: [
       'Фарба Farbex Interior',
@@ -182,7 +169,7 @@ export const home_appliance = [
     ],
   },
   {
-    id: 10,
+    id: 21,
     title: 'Лак акриловий для стільниці',
     requirements: [
       'Водорозчинний. Краще малювати валиком ніж пензлем.',
@@ -192,20 +179,34 @@ export const home_appliance = [
     images: [img('images/home/acrylic.jpg')],
   },
   {
-    id: 11,
+    id: 22,
     title: 'Лак для паркету Sylac Sport P-880',
     requirements: [''],
 
     images: [img('images/home/sylac_1.jpg'), img('images/home/sylac_2.jpg')],
   },
   {
-    id: 11,
-    title: 'ДБЖ APC 750 Back-UPS',
-    requirements: [''],
+    id: 23,
+    title: 'Фарба для радіатора',
+    requirements: [
+      'Фарбу rolax вилив у пласмасове відро від panafarb - 17.08.26',
+      'Фарбували двері та вікно у великій кімнаті - 17.08.26',
+    ],
 
-    images: [img('images/home/upc_apc.png')],
+    images: [img('images/home/paint_1.jpg'), img('images/home/rolax_1.png')],
   },
-
+  {
+    id: 30,
+    title: 'Травяні збори',
+    requirements: [
+      'Збір кишково-шлунковий:',
+      'ромашка лікарська, парило, звіробій,',
+      'перстач гусячий, деревій тисячолистий, мята перцева,',
+      'спориш, подорожник великий, шавлія, золототисячник (центурія)',
+      'листя берези, материнка, нагідки (календула), іван-чай, суниці лісові.',
+      '-------------------------------------------------',
+    ],
+  },
   {
     id: 99,
     title: '',
