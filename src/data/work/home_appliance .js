@@ -150,6 +150,13 @@ export const home_appliance = [
 
     images: [img('images/home/upc_apc.png')],
   },
+  {
+    id: 8,
+    title: 'Холодильниу двохкомпресорний Атлант МХМ-1717-ХХ',
+    requirements: [''],
+
+    images: [img('images/home/')],
+  },
 
   {
     id: 20,
