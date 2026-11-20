@@ -153,7 +153,9 @@ export const home_appliance = [
   {
     id: 8,
     title: 'Холодильниу двохкомпресорний Атлант МХМ-1717-ХХ',
-    requirements: [''],
+    requirements: [
+      'Виміряв середнє споживання дві камери: 1,32 - 1,41 кВт.год/день',
+    ],
 
     images: [img('images/home/')],
   },
