@@ -2,7 +2,7 @@ import { img } from '/src/utils/img';
 export const linkEnglish = [
   {
     id: 99,
-    title: '',
+    title: 'Кирилл Englisher',
     requirements: [' '],
     starterCode: ``,
     solution: ``,
