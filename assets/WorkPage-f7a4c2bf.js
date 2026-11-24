@@ -1,4 +1,4 @@
-import{i as e,r as m,j as t}from"./index-f8da4eaf.js";import{D as l,L as u}from"./DepartmentSelect-13a307aa.js";const d=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
+import{i as e,r as m,j as t}from"./index-33cbba0f.js";import{D as l,L as u}from"./DepartmentSelect-1f1aaf21.js";const d=[{id:1,title:"SA-24 Світловий потік з чашками 2 кам / 3 кам: ",requirements:[" "],starterCode:`1 мл, 2 мл -  50 000 / 70 000 Lux
 5 мл – 70 000 / 95 000 Lux
 10 мл -  100 000 / 130 000 Lux
 без чашок > 200 000 Lux
@@ -376,7 +376,7 @@ Resolver каже:
 Старт 218255 км - 19.07.2025
 Заміна моторної оливи 06.06.2026 — 219585 км
 Олива TITAN UNIMAX PLUS 10W40 5л -1302 грн.(квитанція 18.04.2026)
-Oil filter KAMOKA №F101601  — 200 грн.
+Oil filter KAMOKA №F101601  — 200 грн 14.10.25 / 250 грн 16.11.26 маг AUTO-A.
 Стоять свічки Denso K20TT. Момент затяжки: 22 Нм
 Момент затяжки нова: на 1/2 або 2/3 оберту (від 180° до 240°).
 Момент затяжки б/у: на 1/12 оберту (близько 30°) — тобто лише злегка підтягнути після торкання.
