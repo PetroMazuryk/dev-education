@@ -114,14 +114,8 @@ Oil filter KAMOKA №F101601  — 200 грн 14.10.25 / 250 грн 16.11.26 ма
   },
   {
     id: 5,
-    title: 'Які марки авто можна брати після 300+',
-    requirements: [
-      '1 - Toyota Camry 40, 50, 70, Rav4  2.5',
-      '2 - Toyota Camry 40, 50, 70, Rav4  2.5 гібрид',
-      '',
-      '',
-      '',
-    ],
+    title: 'Toyota Corolla 1.3 1991',
+    requirements: ['', '', '', '', ''],
 
     images: [img('images/home/')],
   },
@@ -157,6 +151,19 @@ Oil filter KAMOKA №F101601  — 200 грн 14.10.25 / 250 грн 16.11.26 ма
     id: 8,
     title: 'Авто полірування',
     requirements: [''],
+
+    images: [img('images/home/')],
+  },
+  {
+    id: 11,
+    title: 'Які марки авто можна брати після 300+',
+    requirements: [
+      '1 - Toyota Camry 40, 50, 70, Rav4  2.5',
+      '2 - Toyota Camry 40, 50, 70, Rav4  2.5 гібрид',
+      '',
+      '',
+      '',
+    ],
 
     images: [img('images/home/')],
   },
