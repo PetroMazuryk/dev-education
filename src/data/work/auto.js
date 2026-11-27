@@ -114,8 +114,14 @@ Oil filter KAMOKA №F101601  — 200 грн 14.10.25 / 250 грн 16.11.26 ма
   },
   {
     id: 5,
-    title: 'Toyota Corolla 1.3 1991',
-    requirements: ['', '', '', '', ''],
+    title: 'Toyota Corolla V=1.3 1991 рік ',
+    requirements: [
+      'JT1WOEE9008013384',
+      'Engine: 2E-E / Type - EE90 / 12-клапанний',
+      '',
+      '',
+      '',
+    ],
 
     images: [img('images/home/')],
   },
